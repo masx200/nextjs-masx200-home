@@ -11,5 +11,11 @@
     "next": "11.x",
     "react": "17.x",
     "react-dom": "17.x"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "index.js",
+  "repository": "https://github.com.cnpmjs.org/masx200/nextjs-test/",
+  "keywords": [],
+  "author": "masx200 <masx200@qq.com>",
+  "license": "ISC"
 }
