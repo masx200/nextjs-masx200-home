@@ -1,25 +1,25 @@
 {
-  "name": "nextjs",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "format": "prettier --write *.js *.json *.md */*.css */*.js */*.ts */*.tsx */*/*.js"
-  },
-  "dependencies": {
-    "next": "11.x",
-    "react": "17.x",
-    "react-dom": "17.x"
-  },
-  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
-  "main": "index.js",
-  "repository": "https://github.com.cnpmjs.org/masx200/nextjs-test/",
-  "keywords": [],
-  "author": "masx200 <masx200@qq.com>",
-  "license": "ISC",
-  "devDependencies": {
-    "prettier": "^2.3.2"
-  }
+    "name": "nextjs",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "format": "prettier --write *.js *.json *.md */*.css */*.js */*.ts */*.tsx */*/*.js"
+    },
+    "dependencies": {
+        "next": "11.x",
+        "react": "17.x",
+        "react-dom": "17.x"
+    },
+    "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+    "main": "index.js",
+    "repository": "https://github.com.cnpmjs.org/masx200/nextjs-test/",
+    "keywords": [],
+    "author": "masx200 <masx200@qq.com>",
+    "license": "ISC",
+    "devDependencies": {
+        "prettier": "^2.3.2"
+    }
 }
