@@ -43,8 +43,7 @@
     "author": "masx200 <masx200@qq.com>",
     "license": "ISC",
     "devDependencies": {
-        "husky": "^7.0.1",
-        "lint-staged": "^11.1.1"
+        "husky": "^7.0.1"
     },
     "repository": {
         "type": "git",
