@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "format": "prettier --write *.js *.json *.md */*.css */*.js */*.ts */*.tsx */*/*.js"
   },
   "dependencies": {
     "next": "11.x",
@@ -17,5 +18,8 @@
   "repository": "https://github.com.cnpmjs.org/masx200/nextjs-test/",
   "keywords": [],
   "author": "masx200 <masx200@qq.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  }
 }
