@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-
+import vercelpicture from "../src/pictures/vercel.svg";
+// console.log(vercelpicture);
 export default function Home() {
     return (
         <div className={styles.container}>
@@ -68,7 +69,7 @@ export default function Home() {
                 >
                     Powered by{" "}
                     <img
-                        src="/vercel.svg"
+                        src={vercelpicture.src}
                         alt="Vercel Logo"
                         className={styles.logo}
                         loading="lazy"
