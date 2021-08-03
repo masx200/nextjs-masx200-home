@@ -19,14 +19,14 @@ import picture7 from "../src/pictures/webpack.svg";
 import tanchu弹出消息通用 from "../src/utils/my弹出消息通用";
 import React, { useEffect, useState } from "react";
 //@ts-ignore
-import { 调整导航栏和主体的距离 } from "../src/调整导航栏和主体的距离.js";
+// import { 调整导航栏和主体的距离 } from "../src/调整导航栏和主体的距离.js";
 ("use strict");
 
 export default function home() {
     const [nowtime, setnowtime] = useState(获取当前时间());
     useEffect(() => {
         // location.hash = "";
-        调整导航栏和主体的距离();
+        // 调整导航栏和主体的距离();
         document.title = "React router App-" + "home";
         let timer = setInterval(() => {
             setnowtime(获取当前时间());
