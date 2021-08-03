@@ -22,7 +22,7 @@ const nextConfig = {
             isServer,
             defaultLoaders,
             webpack,
-            rest,
+            ...rest,
         });
         const ftcwp = new ForkTsCheckerWebpackPlugin();
         config.plugins = [...config.plugins, ftcwp];
