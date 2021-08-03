@@ -6,7 +6,7 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "format": "prettier --write *.js *.json *.md */*.css */*.js */*.ts */*.tsx */*/*.js"
+        "format": "prettier --write *.js *.json *.md */*.css */*.js */*.ts */*.tsx */*/*.js */*.jsx  */*/*.ts "
     },
     "dependencies": {
         "next": "11.x",
@@ -20,6 +20,9 @@
     "author": "masx200 <masx200@qq.com>",
     "license": "ISC",
     "devDependencies": {
-        "prettier": "^2.3.2"
+        "@types/node": "^16.4.10",
+        "@types/react": "^17.0.15",
+        "prettier": "^2.3.2",
+        "typescript": "^4.3.5"
     }
 }
