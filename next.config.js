@@ -1,5 +1,11 @@
+// @ts-check
 "use strict";
-module.exports = {
+
+/**
+ * @type {Partial< import('next/dist/next-server/server/config').NextConfig>}
+ **/
+const nextConfig = {
+    poweredByHeader: false,
     webpack: (
         config,
         { buildId, dev, isServer, defaultLoaders, webpack, ...rest },
@@ -18,6 +24,6 @@ module.exports = {
         console.log({ config });
 
         return config;
-
     },
 };
+module.exports = nextConfig;
