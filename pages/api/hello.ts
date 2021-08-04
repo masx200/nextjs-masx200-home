@@ -2,7 +2,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 
 export default (req: NextApiRequest, res: NextApiResponse) => {
-const {url,method}=req
+    const { url, method } = req;
     res.statusCode = 200;
-    res.json(Object.assign({url,method},req.headers));
+    res.json(Object.assign({ url, method }, req.headers));
 };
