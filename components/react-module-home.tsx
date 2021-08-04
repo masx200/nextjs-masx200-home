@@ -1,6 +1,7 @@
 //@ts-ignore
 //@ts-ignore
-import 首页推荐网址目录 from "../src/首页推荐网址目录";
+import Head from "next/head";
+import React, { useEffect, useState } from "react";
 //@ts-ignore
 import picture1 from "../src/pictures/babeljs.png";
 //@ts-ignore
@@ -17,11 +18,10 @@ import picture6 from "../src/pictures/vue.png";
 import picture7 from "../src/pictures/webpack.svg";
 //@ts-ignore
 import tanchu弹出消息通用 from "../src/utils/my弹出消息通用";
-import React, { useEffect, useState } from "react";
+import 首页推荐网址目录 from "../src/首页推荐网址目录";
 //@ts-ignore
 // import { 调整导航栏和主体的距离 } from "../src/调整导航栏和主体的距离.js";
 ("use strict");
-import Head from "next/head";
 export default function home() {
     const [nowtime, setnowtime] = useState(获取当前时间());
     useEffect(() => {

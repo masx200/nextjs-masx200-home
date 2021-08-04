@@ -12,7 +12,7 @@
         "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
         "build": "next build",
         "start": "next start",
-        "format": "prettier --write *.ts *.js *.json *.md */*.css */*.js */*.ts */*.tsx */*/*.js */*.jsx  */*/*.ts ",
+        "format": "prettier --write *.ts *.js *.json *.md */*.css */*.js */*.ts */*.tsx */*/*.js */*.jsx  */*/*.ts */*/*.tsx",
         "prepare": "husky install",
         "export": "next export"
     },
@@ -25,6 +25,7 @@
         "ahooks": "^2.10.9",
         "autoprefixer": "^10.3.1",
         "babel-plugin-clean-code": "^0.0.3",
+        "clipboard": "^2.0.8",
         "cssnano": "^5.0.7",
         "fork-ts-checker-webpack-plugin": "^6.3.1",
         "highlight.js": "^11.2.0",
