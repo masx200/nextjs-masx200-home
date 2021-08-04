@@ -12,9 +12,13 @@ function onload(call: () => void) {
             return call();
         });
     } else {
-        window.addEventListener("load", () => {
-            return call();
-        },{once:true});
+        window.addEventListener(
+            "load",
+            () => {
+                return call();
+            },
+            { once: true }
+        );
     }
 }
 async function loadclipboard() {
