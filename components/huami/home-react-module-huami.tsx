@@ -66,7 +66,6 @@ export default function huami() {
 
     return (
         <>
-            {" "}
             <Head>
                 <title>{"花密  不一样的密码管理工具"}</title>
             </Head>
