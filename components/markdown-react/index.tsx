@@ -1,34 +1,6 @@
 "use strict";
 import "highlight.js/styles/github.css";
-import marked from "marked";
 import React from "react";
-//@ts-ignore
-import hljs from "../../src/assetsjs/highlight.min.js";
-// console.log(hljs)
-export async function getrenderedmarkdown(src: string) {
-    const text = await fetchtext(src);
-    return marked(text, {
-        baseUrl: src,
-        highlight(code, lang) {
-            // console.log(code,lang)
-            // debugger
-            const language = hljs.getLanguage(lang);
-            // console.log(language)
-            return language
-                ? hljs.highlight(code, { language: language.name }).value
-                : hljs.highlightAuto(code).value;
-        },
-    });
-}
-
-async function fetchtext(url: string, opts: RequestInit = {}) {
-    var r = await fetch(new URL(url).href, opts);
-    if (r.ok) {
-        return await r.text();
-    } else {
-        throw new Error("fetch failed:" + url);
-    }
-}
 export default React.memo(Staticmarkdown);
 
 function Staticmarkdown(props: { src: string; markdown: string }) {

@@ -1,6 +1,6 @@
 import Home, { markurl } from "../components/home-react-module-home";
 import { GetStaticProps } from "next";
-import { getrenderedmarkdown } from "../components/markdown-react";
+import { getrenderedmarkdown } from "../components/markdown-react/getrenderedmarkdown";
 const reacthome = ({ markdown }: { markdown: string }) => {
     return <Home markdown={markdown}></Home>;
 };
