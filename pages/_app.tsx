@@ -5,7 +5,7 @@ import Layout from "../components/layout";
 
 import "../src/polyfill";
 import MyHead from "../components/myhead";
-'undefined'!==typeof window &&
+"undefined" !== typeof window &&
     window.addEventListener(
         "load",
         () => {
