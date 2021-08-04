@@ -1,5 +1,5 @@
 "use strict";
-
+import 'highlight.js/styles/github.css';
 import marked from "marked";
 import React from "react";
 //@ts-ignore
