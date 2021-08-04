@@ -1,0 +1,3 @@
+{
+    "plugins": ["cssnano", "autoprefixer", "postcss-preset-env"]
+}
