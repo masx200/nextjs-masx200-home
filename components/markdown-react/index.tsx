@@ -1,12 +1,26 @@
 "use strict";
 
-import React, { useEffect, useState, useRef } from "react";
-
 import marked from "marked";
+import React from "react";
 //@ts-ignore
 import hljs from "../../src/assetsjs/highlight.min.js";
+// console.log(hljs)
+export async function getrenderedmarkdown(src: string) {
+    const text = await fetchtext(src);
+    return marked(text, {
+        baseUrl: src,
+        highlight(code, lang) {
+            // console.log(code,lang)
+            // debugger
+            const language = hljs.getLanguage(lang);
+// console.log(language)
+            return language
+                ? hljs.highlight(code, { language :language.name}).value
+                : hljs.highlightAuto(code).value;
+        },
+    });
+}
 
-const cachemarkdown = new Map();
 async function fetchtext(url: string, opts: RequestInit = {}) {
     var r = await fetch(new URL(url).href, opts);
     if (r.ok) {
@@ -15,81 +29,13 @@ async function fetchtext(url: string, opts: RequestInit = {}) {
         throw new Error("fetch failed:" + url);
     }
 }
-export default React.memo(markdown);
+export default React.memo(Staticmarkdown);
 
-function markdown(props: { src: string }) {
-    const abortref = useRef(new AbortController());
-    // console.log(cachemarkdown);
-    let markdowncache = "";
-    let cache加载完成 = false;
-    let cache加载失败 = false;
-    const Fallback = () => (
-        <div>
-            <h1>loading</h1>
-            <span className="mui-spinner mui-spinner-custom" />
-        </div>
-    );
+function Staticmarkdown(props: { src: string; markdown: string }) {
+    let markdowncache = props.markdown;
 
-    const [加载完成, set加载完成] = useState(cache加载完成);
-    const [加载失败, set加载失败] = useState(cache加载失败);
-    const [markdown内容, setmarkdown内容] = useState(markdowncache);
-
-    //已经卸载此组件
-    const unmounted = useRef(false);
-    useEffect(() => {
-        if (props.src) {
-            const marktext = cachemarkdown.get(props.src);
-            if (marktext) {
-                set加载完成(true);
-                setmarkdown内容(marktext);
-                return;
-            }
-            (async () => {
-                hljs.highlightAll();
-
-                let text: string;
-                try {
-                    text = await fetchtext(props.src, {
-                        signal: abortref.current.signal,
-                    });
-                } catch (error) {
-                    if (
-                        error instanceof DOMException &&
-                        error?.name === "AbortError"
-                    ) {
-                        console.dir(error);
-                        return;
-                    }
-                    console.error(error);
-
-                    unmounted.current || set加载失败(true);
-                    throw error;
-                    // return;
-                }
-
-                const divele = document.createElement("div");
-
-                divele.innerHTML = marked(text);
-
-                Array.from(divele.querySelectorAll("pre code")).forEach(
-                    (block) => {
-                        hljs.highlightElement(block);
-                    }
-                );
-                unmounted.current || set加载完成(true);
-
-                unmounted.current || setmarkdown内容(divele.innerHTML);
-                cachemarkdown.set(props.src, divele.innerHTML);
-            })();
-        }
-    }, [props.src]);
-    useEffect(() => {
-        return () => {
-            unmounted.current = true;
-            abortref.current.abort();
-            //清除副作用
-        };
-    });
+    const markdown内容 = markdowncache;
+    const 加载完成 = !!markdown内容;
     return (
         <div className="container">
             <div
@@ -130,15 +76,6 @@ function markdown(props: { src: string }) {
                                     __html: markdown内容,
                                 }}
                             />
-                            {!加载完成 ? <Fallback /> : <React.Fragment />}
-
-                            {加载失败 ? (
-                                <div>
-                                    <h1>Error!</h1>
-                                </div>
-                            ) : (
-                                <React.Fragment />
-                            )}
                         </div>
                     </article>
                 </div>

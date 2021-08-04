@@ -7,12 +7,12 @@ import markdwonurls from "../src/utils/markdownurls";
 // import tanchu弹出消息通用 from "@/utils/my弹出消息通用";
 // eslint-disable-next-line no-unused-vars
 import Markdownreact from "./markdown-react/index";
-const markurl = markdwonurls["masx200-github-io"];
+export const markurl = markdwonurls["masx200-github-io"];
 ("use strict");
 
 // const location = window.location;
 
-export default function home() {
+export default function home({ markdown }: { markdown: string }) {
     // useEffect(() => {
     //     /* 组件第一次加载时和每次组件刷新时会加载这个函数 */
     //     //location.hash = "#/";
@@ -48,7 +48,7 @@ export default function home() {
                         </p>
                     </div>
                 </div>
-                <Markdownreact src={markurl} />
+                <Markdownreact src={markurl} markdown={markdown} />
             </div>
         </>
     );

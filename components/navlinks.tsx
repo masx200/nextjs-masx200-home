@@ -4,10 +4,10 @@ export const navlinks: Linktype[] = [
     { text: "关于next.js", href: { pathname: "/nextabout" } },
     { text: "关于REACT", href: { pathname: "/react-about" } },
     { text: "基于REACT的主页", href: { pathname: "/react-home" } },
+    { text: "花密网页版", href: { pathname: "/react-huami" } },
     { text: "rss阅读器", href: { pathname: "/react-rssreader" } },
 
     { text: "圆周率计算多线程", href: { pathname: "/picalc" } },
-    { text: "花密网页版", href: { pathname: "/react-huami" } },
     { text: "JSfuck-and-hieroglyphy-Decoder", href: { pathname: "/decoder" } },
     { text: "JSfuck-ENCODER", href: { pathname: "/jsfuck" } },
     { text: "hieroglyphy-ENCODER", href: { pathname: "/hieroglyphy" } },
