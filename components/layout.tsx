@@ -18,7 +18,7 @@ const layout = ({ children }: PropsWithChildren<{}>) => {
     useEffect(() => {
         createobserver();
     }, []);
-    const [navheight, setnavheight] = useState(100);
+    const [navheight, setnavheight] = useState(142);
     const router = useRouter();
 
     const [state, { toggle }] = useToggle(true);
