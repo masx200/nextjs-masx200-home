@@ -52,9 +52,9 @@ const nextConfig = {
             },
             parallel: !0,
         });
-        config.optimization.minimizer = [
+        config.optimization.minimizer = [terserplugin,
             ...config.optimization.minimizer,
-            terserplugin,
+            
         ];
         if (!dev) {
             config.optimization.minimize = true;
