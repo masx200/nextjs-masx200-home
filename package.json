@@ -9,11 +9,12 @@
     },
     "scripts": {
         "precommit": "npm run format ||node -v",
-        "dev": "next dev",
+        "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
         "build": "next build",
         "start": "next start",
         "format": "prettier --write *.ts *.js *.json *.md */*.css */*.js */*.ts */*.tsx */*/*.js */*.jsx  */*/*.ts ",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "export": "next export"
     },
     "dependencies": {
         "@highlightjs/cdn-assets": "^11.2.0",
@@ -45,6 +46,7 @@
     "author": "masx200 <masx200@qq.com>",
     "license": "ISC",
     "devDependencies": {
+        "cross-env": "^7.0.3",
         "husky": "^7.0.1"
     },
     "repository": {
