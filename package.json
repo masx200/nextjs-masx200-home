@@ -9,7 +9,7 @@
     },
     "scripts": {
         "precommit": "npm run format ||node -v",
-        "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
+        "dev": "cross-env NODE_OPTIONS='--inspect' next dev -p 5000",
         "build": "next build",
         "start": "next start",
         "format": "prettier --write *.ts *.js *.json *.md */*.css */*.js */*.ts */*.tsx */*/*.js */*.jsx  */*/*.ts */*/*.tsx",
