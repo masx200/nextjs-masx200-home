@@ -3,8 +3,33 @@ import { useToggle } from "ahooks";
 import { 我的自定义导航链接 } from "./我的自定义导航链接";
 import { useRouter } from "next/router";
 import { navlinks } from "./navlinks";
-
+function onload(call: () => void) {
+    if (typeof window === "undefined") {
+        return;
+    }
+    if (document.readyState === "complete") {
+        Promise.resolve().then(() => {
+            return call();
+        });
+    } else {
+        window.addEventListener("load", () => {
+            return call();
+        },{once:true});
+    }
+}
+async function loadclipboard() {
+    const module = await import("clipboard");
+    const ClipboardJS = module.default;
+    new ClipboardJS(".btn").on("success", function (e) {
+        // console.log(e);
+        // console.info("Text:", e.text);
+        e.clearSelection();
+    });
+}
 const layout = ({ children }: PropsWithChildren<{}>) => {
+    useEffect(() => {
+        onload(loadclipboard);
+    }, []);
     const navele = useRef<Element>();
     const observer = useRef<ResizeObserver>();
     function createobserver() {
