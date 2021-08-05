@@ -18,9 +18,9 @@ const DOMPurify = (() => {
 const { Renderer } = marked;
 class myrenderer extends Renderer {
     image(href: string | null, title: string | null, text: string): string {
-        console.log(href, title, text);
+        // console.log(href, title, text);
         var result = super.image(href, title, text);
-        console.log(result);
+        // console.log(result);
         if (result.startsWith("<img src=")) {
             result = result.replace("<img src=", "<img loading='lazy' src=");
         }
