@@ -12,7 +12,6 @@ export default React.memo(component);
 function component({ markdown }: { markdown: string }) {
     return (
         <div>
-            {" "}
             <Head>
                 <title>{"编程的vscode的优秀扩展推荐和vscode 的推荐设置"}</title>
             </Head>
