@@ -40,7 +40,7 @@ export default function home() {
     return (
         <>
             <Head>
-                <title>{"React router App-" + "home"}</title>
+                <title>{"next.js App-" + "home"}</title>
             </Head>
             <div className="App">
                 <header className="">
