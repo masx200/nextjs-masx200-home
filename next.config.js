@@ -1,3 +1,5 @@
+const withPWA = require("next-pwa");
+const runtimeCaching = require("next-pwa/cache");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 // @ts-check
 ("use strict");
@@ -34,4 +36,15 @@ const nextConfig = {
         return config;
     },
 };
-module.exports = nextConfig;
+module.exports = withPWA(
+    Object.assign(
+        {
+            pwa: {
+                disable: process.env.NODE_ENV === "development",
+                dest: "public",
+                runtimeCaching,
+            },
+        },
+        nextConfig
+    )
+);

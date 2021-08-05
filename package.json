@@ -36,6 +36,7 @@
         "jsdom": "^16.7.0",
         "marked": "^2.1.3",
         "next": "11.x",
+        "next-pwa": "^5.2.24",
         "postcss": "^8.3.6",
         "postcss-preset-env": "^6.7.0",
         "prettier": "^2.3.2",
