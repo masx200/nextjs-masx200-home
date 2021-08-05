@@ -152,7 +152,7 @@ export default function home() {
                     </a>
                     <h1>Hello, world!</h1>
                 </header>
-                <div id="图片列表200">
+                <div className="图片列表200">
                     <hr />
                     <img loading="lazy" src={picture1.src} />
                     <hr />
