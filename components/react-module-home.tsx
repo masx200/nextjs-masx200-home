@@ -61,16 +61,6 @@ export default function home() {
                                 一生忽而得一夏当司掌好年华的微博
                             </a>
                         </p>
-                        <p>
-                            <a
-                                className="mui-btn mui-btn-primary mui-btn-outlined"
-                                rel="noopener noreferrer"
-                                target="_blank"
-                                href="https://github.com/masx200"
-                            >
-                                masx200的github仓库
-                            </a>
-                        </p>
                         <div>
                             <ul>
                                 {首页推荐网址目录.map(
