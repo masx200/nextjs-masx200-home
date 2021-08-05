@@ -15,7 +15,7 @@ export async function getrenderedmarkdown(src: string) {
             const language = hljs.getLanguage(lang);
             // console.log(language)
             return language
-                ? hljs.highlight(code, { language: language.name }).value
+                ? hljs.highlight(code, { language:lang}).value
                 : hljs.highlightAuto(code).value;
         },
     });
