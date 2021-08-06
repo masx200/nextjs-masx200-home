@@ -24,7 +24,7 @@ export const getStaticProps: GetStaticProps<Staticresult, StaticParams> =
         const sitename = context.params?.sitename;
         const src = sitename ? Reflect.get(rssfeedxml, sitename) : undefined;
         const data = src ? await getrss(src) : undefined;
-        console.log(sitename, data);
+        // console.log(sitename, data);
         return { revalidate: 3600, props: { sitename, data } };
     };
 export const getStaticPaths: GetStaticPaths<{ sitename: string }> = () => {

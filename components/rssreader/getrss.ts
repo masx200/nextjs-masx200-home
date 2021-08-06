@@ -48,11 +48,11 @@ export const getrss = async function (src: string): Promise<Rssdata> {
             //@ts-ignore
             //        alert(e["content:encoded"]);
             //      }
-            console.log(des);
+            // console.log(des);
             des = htmltotext(des);
 
             des = htmltotext(des);
-            console.log(des);
+            // console.log(des);
             return { link, title, description: des };
         }
     );

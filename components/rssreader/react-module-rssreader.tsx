@@ -1,10 +1,12 @@
 //@ts-ignore
-import React, { useEffect, useMemo } from "react";
-
 import Head from "next/head";
 import Link from "next/link";
-import rssfeedxml from "./rssfeedxml";
+import React, { useEffect, useMemo } from "react";
+import { CustomRSSLink } from "./CustomRSSLink";
 import { Rssdata } from "./getrss";
+import rssfeedxml from "./rssfeedxml";
+import { Rssviewer } from "./Rssviewer";
+
 export { rssfeedxml };
 /* eslint-disable react/prop-types */
 ("use strict");
@@ -19,7 +21,7 @@ function Rssreader({ sitename, data }: { sitename?: string; data?: Rssdata }) {
         : undefined;
 
     useEffect(() => {
-        console.log(sitename);
+        console.log("sitename", sitename);
     }, [sitename]);
     const title = useMemo(() => {
         if ("undefined" !== typeof sitename) {
@@ -38,80 +40,62 @@ function Rssreader({ sitename, data }: { sitename?: string; data?: Rssdata }) {
                 <p>使用fast-xml-parser把xml转换成json</p>
                 <nav className="navbar navbar-expand-sm bg-light navbar-light ">
                     <ul className="demo">
-                        <Link
+                        <CustomRSSLink
+                            data-loading-icon="mui-spinner mui-spinner-custom"
+                            className="mui-btn mui-btn-royal mui-btn-outlined btn-lg"
                             href={{
                                 pathname: "/react-rssreader" + "/" + "tmtpost",
                             }}
                         >
-                            <a
-                                data-loading-icon="mui-spinner mui-spinner-custom"
-                                className="mui-btn mui-btn-royal mui-btn-outlined btn-lg"
-                            >
-                                加载tmtpost
-                            </a>
-                        </Link>
-                        <Link
+                            加载tmtpost
+                        </CustomRSSLink>
+                        <CustomRSSLink
                             href={{
                                 pathname:
                                     "/react-rssreader" + "/" + "iplaysoft",
                             }}
+                            data-loading-icon="mui-spinner mui-spinner-custom"
+                            className="mui-btn mui-btn-primary mui-btn-outlined btn-lg"
                         >
-                            <a
-                                data-loading-icon="mui-spinner mui-spinner-custom"
-                                className="mui-btn mui-btn-primary mui-btn-outlined btn-lg"
-                            >
-                                加载iplaysoft
-                            </a>
-                        </Link>
-                        <Link
+                            加载iplaysoft
+                        </CustomRSSLink>
+                        <CustomRSSLink
                             href={{
                                 pathname:
                                     "/react-rssreader" + "/" + "landiannews",
                             }}
+                            data-loading-icon="mui-spinner mui-spinner-custom"
+                            className="mui-btn mui-btn-warning mui-btn-outlined btn-lg"
                         >
-                            <a
-                                data-loading-icon="mui-spinner mui-spinner-custom"
-                                className="mui-btn mui-btn-warning mui-btn-outlined btn-lg"
-                            >
-                                加载landiannews
-                            </a>
-                        </Link>
-                        <Link
+                            加载landiannews
+                        </CustomRSSLink>
+                        <CustomRSSLink
                             href={{
                                 pathname: "/react-rssreader" + "/" + "ithome",
                             }}
+                            data-loading-icon="mui-spinner mui-spinner-custom"
+                            className="mui-btn mui-btn-danger mui-btn-outlined btn-lg"
                         >
-                            <a
-                                data-loading-icon="mui-spinner mui-spinner-custom"
-                                className="mui-btn mui-btn-danger mui-btn-outlined btn-lg"
-                            >
-                                加载ithome
-                            </a>
-                        </Link>
-                        <Link
+                            加载ithome
+                        </CustomRSSLink>
+                        <CustomRSSLink
                             href={{
                                 pathname: "/react-rssreader" + "/" + "ifanr",
                             }}
+                            data-loading-icon="mui-spinner mui-spinner-custom"
+                            className="mui-btn mui-btn-success mui-btn-outlined btn-lg"
                         >
-                            <a
-                                data-loading-icon="mui-spinner mui-spinner-custom"
-                                className="mui-btn mui-btn-success mui-btn-outlined btn-lg"
-                            >
-                                加载ifanr
-                            </a>
-                        </Link>
-                        <Link
+                            加载ifanr
+                        </CustomRSSLink>
+                        <CustomRSSLink
                             href={{
                                 pathname: "/react-rssreader" + "/" + "pingwest",
                             }}
+                            data-loading-icon="mui-spinner mui-spinner-custom"
+                            className="mui-btn mui-btn-primary mui-btn-outlined btn-lg"
                         >
-                            <a
-                                data-loading-icon="mui-spinner mui-spinner-custom"
-                                className="mui-btn mui-btn-primary mui-btn-outlined btn-lg"
-                            >
-                                加载pingwest
-                            </a>
-                        </Link>
+                            加载pingwest
+                        </CustomRSSLink>
                     </ul>
                 </nav>
                 {data && rssfeedurl ? (
@@ -120,84 +104,6 @@ function Rssreader({ sitename, data }: { sitename?: string; data?: Rssdata }) {
                     <React.Fragment />
                 )}
             </div>
-        </>
-    );
-}
-function Rssviewer({ src, data }: { src: string; data: Rssdata }) {
-    useEffect(() => {
-        console.log(src);
-    }, [src]);
-    const rssfeedurl = src;
-
-    const rssstatetitle = data?.title;
-    const rssstatedescription = data?.description;
-    const rssstate = data?.content;
-    const loaded = true;
-    return (
-        <>
-            <header
-                className="App-header"
-                style={{
-                    display: loaded ? "block" : "none",
-                }}
-            >
-                <div>
-                    <h5>{rssfeedurl}</h5>
-                </div>
-                <div style={{ maxWidth: "100%" }}>
-                    <h3>
-                        <b>{rssstatetitle}</b>
-                    </h3>
-                    <p>{rssstatedescription}</p>
-
-                    <ul className="mui-table-view">
-                        {rssstate
-                            ? rssstate.map((e, index) => (
-                                  <li
-                                      className="mui-table-view-cell mui-media"
-                                      key={index}
-                                      /* style="width: 100%;" */
-                                      /* 每个项目占一行,防止一行多个项目 */
-                                      style={{ width: " 100%" }}
-                                  >
-                                      <div className="mui-media-body">
-                                          <a
-                                              href={e.link}
-                                              target="_blank"
-                                              rel="noopener noreferrer"
-                                          >
-                                              <b> {e.title}</b>
-                                          </a>
-                                          <a
-                                              href={e.link}
-                                              target="_blank"
-                                              rel="noopener noreferrer"
-                                          >
-                                              <p className="mui-ellipsis">
-                                                  {e.link}
-                                              </p>
-                                          </a>
-
-                                          <details>
-                                              <summary>详情</summary>
-                                              <p
-                                                  className="mui-ellipsis"
-                                                  style={{
-                                                      whiteSpace: "normal",
-                                                      wordBreak: "break-all",
-                                                      wordWrap: "break-word",
-                                                  }}
-                                              >
-                                                  {e.description}
-                                              </p>
-                                          </details>
-                                      </div>
-                                  </li>
-                              ))
-                            : null}
-                    </ul>
-                </div>
-            </header>
         </>
     );
 }

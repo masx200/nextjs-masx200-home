@@ -7,7 +7,11 @@ export function htmltotext(description: string): string {
     if ("undefined" === typeof body.innerText) {
         Object.defineProperty(body, "innerText", {
             get() {
-                return this.textContent;
+                var el = this.cloneNode(true); // can skip if mutability isn't a concern
+                el.querySelectorAll("script,style").forEach(
+                    (s: { remove: () => any }) => s.remove()
+                );
+                return el.textContent;
             },
             set(value) {
                 this.textContent = value;

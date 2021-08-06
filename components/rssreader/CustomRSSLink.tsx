@@ -1,0 +1,26 @@
+import Link from "next/link";
+import React, { PropsWithChildren } from "react";
+import { useactivelink } from "../useactivelink";
+
+export function CustomRSSLink({
+    className = "",
+    children,
+    href,
+    ...rest
+}: PropsWithChildren<
+    Record<string, any> & { className?: string; href: { pathname?: string } }
+>) {
+    const active = useactivelink(href);
+    return (
+        <Link href={href}>
+            <a
+                className={[className, active && "active"]
+                    .filter(Boolean)
+                    .join(" ")}
+                {...rest}
+            >
+                {children}
+            </a>
+        </Link>
+    );
+}
