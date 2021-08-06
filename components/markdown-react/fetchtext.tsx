@@ -1,4 +1,5 @@
 "use strict";
+
 //@ts-ignore
 export async function fetchtext(url: string, opts: RequestInit = {}) {
     var r = await fetch(new URL(url).href, opts);
