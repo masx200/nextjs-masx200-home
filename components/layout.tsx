@@ -3,33 +3,8 @@ import { useToggle } from "ahooks";
 import { 我的自定义导航链接 } from "./我的自定义导航链接";
 import { useRouter } from "next/router";
 import { navlinks } from "./navlinks";
-function onload(call: () => void) {
-    if (typeof window === "undefined") {
-        return;
-    }
-    if (document.readyState === "complete") {
-        Promise.resolve().then(() => {
-            return call();
-        });
-    } else {
-        window.addEventListener(
-            "load",
-            () => {
-                return call();
-            },
-            { once: true }
-        );
-    }
-}
-async function loadclipboard() {
-    const module = await import("clipboard");
-    const ClipboardJS = module.default;
-    new ClipboardJS(".btn").on("success", function (e) {
-        // console.log(e);
-        // console.info("Text:", e.text);
-        e.clearSelection();
-    });
-}
+import { onload } from "./onload";
+import { loadclipboard } from "./loadclipboard";
 const layout = ({ children }: PropsWithChildren<{}>) => {
     useEffect(() => {
         onload(loadclipboard);
@@ -58,7 +33,7 @@ const layout = ({ children }: PropsWithChildren<{}>) => {
     useEffect(() => {
         // console.log("onmounted");
 
-        if (document.body.clientWidth <= 500) {
+        if (window.innerWidth <= 500) {
             shouqi收起折叠的导航栏菜单();
         }
 
@@ -118,16 +93,7 @@ const layout = ({ children }: PropsWithChildren<{}>) => {
                                 shouqi收起折叠的导航栏菜单();
                             }}
                         >
-                            {navlinks.map(({ text, href }, index) => {
-                                return (
-                                    <li key={index}>
-                                        <我的自定义导航链接
-                                            href={href}
-                                            text={text}
-                                        />
-                                    </li>
-                                );
-                            })}
+                            {navlinkeles}
                         </ul>
                     </div>
                 </nav>
@@ -148,3 +114,10 @@ export interface Linktype {
     text: string;
     href: Partial<import("url").UrlObject>;
 }
+const navlinkeles = navlinks.map(({ text, href }, index) => {
+    return (
+        <li key={index}>
+            <我的自定义导航链接 href={href} text={text} />
+        </li>
+    );
+});
