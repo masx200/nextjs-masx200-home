@@ -1,7 +1,7 @@
 //@ts-ignore
 //@ts-ignore
 import Head from "next/head";
-import React from "react";
+import React, { memo } from "react";
 //@ts-ignore
 import picture1 from "../src/pictures/babeljs.png";
 //@ts-ignore
@@ -23,9 +23,9 @@ import { Showtime } from "./Showtime";
 //@ts-ignore
 // import { 调整导航栏和主体的距离 } from "../src/调整导航栏和主体的距离.js";
 ("use strict");
-export default function home() {
+export default memo(function home() {
     return homeeles;
-}
+});
 const homeeles = (
     <>
         <Head>

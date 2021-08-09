@@ -1,9 +1,14 @@
-import React, { useEffect } from "react";
+import React, { memo, useEffect } from "react";
 import { Rssdata } from "./getrss";
-
-export function Rssviewer({ src, data }: { src: string; data: Rssdata }) {
+export const Rssviewer = memo(function Rssviewer({
+    src,
+    data,
+}: {
+    src: string;
+    data: Rssdata;
+}) {
     useEffect(() => {
-        console.log("src", src);
+        // console.log("src", src);
     }, [src]);
     const rssfeedurl = src;
 
@@ -78,4 +83,4 @@ export function Rssviewer({ src, data }: { src: string; data: Rssdata }) {
             </header>
         </>
     );
-}
+});

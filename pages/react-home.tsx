@@ -1,9 +1,10 @@
-import Home, { markurl } from "../components/home-react-module-home";
 import { GetStaticProps } from "next";
+import { memo } from "react";
+import Home, { markurl } from "../components/home-react-module-home";
 import { getrenderedmarkdown } from "../components/markdown-react/getrenderedmarkdown";
-const reacthome = ({ markdown }: { markdown: string }) => {
+const reacthome = memo(({ markdown }: { markdown: string }) => {
     return <Home markdown={markdown}></Home>;
-};
+});
 export default reacthome;
 
 export const getStaticProps: GetStaticProps = async (context) => {

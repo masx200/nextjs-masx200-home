@@ -1,10 +1,10 @@
-"use strict";
 import $ from "jquery";
 import Head from "next/head";
-import React, { useCallback, useEffect, useRef } from "react";
+import React, { memo, useCallback, useEffect, useRef } from "react";
 import { generatehuami } from "./generatehuami";
 import { useBindtext } from "./useBindtext";
-export default function huami() {
+("use strict");
+export default memo(function huami() {
     // useEffect(() => {
     //     document.title = "masx200的github主页-" + "花密  不一样的密码管理工具";
     // }, []);
@@ -12,30 +12,33 @@ export default function huami() {
     const [inputtext2, , onchangeinputtext2] = useBindtext("");
     const [inputtext3, setinputtext3, onchangeinputtext3] = useBindtext("");
     const copyokref = useRef<HTMLElement>();
-    const handlechange = useCallback(
-        function handlechang1e(inputtext1, inputtext2) {
-            // inputtext1, inputtext2
-            //   console.log(this);
-            //   countCode();
-            //   (function countCode() {
-            var password = inputtext1;
-            //  $("#password").val();
-            var key = inputtext2;
-            //  $("#key").val();
-            if (password && key) {
-                const code16 = generatehuami(password, key);
-                setinputtext3(code16);
-                // keysave = $("#key").val();
-            }
+    const handlechange = useCallback(function handlechang1e(
+        inputtext1: string,
+        inputtext2: string
+    ) {
+        // inputtext1, inputtext2
+        //   console.log(this);
+        //   countCode();
+        //   (function countCode() {
+        var password = inputtext1;
+        //  $("#password").val();
+        var key = inputtext2;
+        //  $("#key").val();
+        if (password && key) {
+            const code16 = generatehuami(password, key);
+            setinputtext3(code16);
+            // keysave = $("#key").val();
+        }
 
-            //   console.log("keysave",keysave)
-            //   })();
-            //
-        },
-        [inputtext1, inputtext2]
-    );
+        //   console.log("keysave",keysave)
+        //   })();
+        //
+    },
+    []);
 
-    const functioncopy = function functionc1opy(inputtext3: any) {
+    const functioncopy = useCallback(function functionc1opy(
+        inputtext3: string
+    ) {
         if (
             inputtext3
             // $(".code16-F3345173-D776-8853-D5BE-65C8131C4729").val()
@@ -55,7 +58,8 @@ export default function huami() {
                     $(okele).hide();
                 });
         }
-    };
+    },
+    []);
     // [inputtext3]
     useEffect(() => {
         /*
@@ -64,6 +68,25 @@ export default function huami() {
         handlechange(inputtext1, inputtext2);
     }, [inputtext1, inputtext2]);
 
+    const oncopy = useCallback(() => {
+        functioncopy(inputtext3);
+    }, [inputtext3]);
+    const onchange1 = useCallback(
+        (e: React.ChangeEvent<HTMLInputElement>): void => {
+            onchangeinputtext1(e);
+        },
+        []
+    );
+    const onchange2 = useCallback(
+        (e: React.ChangeEvent<HTMLInputElement>): void => {
+            onchangeinputtext2(e);
+        },
+        []
+    );
+    const onchange3 = useCallback(
+        (e: React.ChangeEvent<HTMLInputElement>): void => onchangeinputtext3(e),
+        []
+    );
     return (
         <>
             <Head>
@@ -87,12 +110,7 @@ export default function huami() {
                             <p>
                                 <input
                                     value={inputtext1}
-                                    onChange={(e) => {
-                                        onchangeinputtext1(e);
-                                        //   handlechange(inputtext1, inputtext2);
-                                        // input1ref.current.value,
-                                        // input2ref.current.value
-                                    }}
+                                    onChange={onchange1}
                                     id="password"
                                     placeholder="输入密码"
                                     name="password"
@@ -104,9 +122,7 @@ export default function huami() {
                             <p>
                                 <input
                                     value={inputtext2}
-                                    onChange={(e) => {
-                                        onchangeinputtext2(e);
-                                    }}
+                                    onChange={onchange2}
                                     id="key"
                                     placeholder="输入代号"
                                     name="key"
@@ -129,7 +145,7 @@ export default function huami() {
                                 <p>
                                     <input
                                         value={inputtext3}
-                                        onChange={onchangeinputtext3}
+                                        onChange={onchange3}
                                         readOnly={true}
                                         className="col-lg-12 col-md-12 col-sm-12 col-xs-12 snippet code16d form-control code16-F3345173-D776-8853-D5BE-65C8131C4729"
                                     />
@@ -137,9 +153,7 @@ export default function huami() {
                                 <br />
                                 <p>
                                     <button
-                                        onClick={() => {
-                                            functioncopy(inputtext3);
-                                        }}
+                                        onClick={oncopy}
                                         id="copycode16"
                                         data-clipboard-target=".code16-F3345173-D776-8853-D5BE-65C8131C4729"
                                         className="btn btn-lg btn copycode16d btn-info"
@@ -879,4 +893,4 @@ export default function huami() {
             </div>
         </>
     );
-}
+});

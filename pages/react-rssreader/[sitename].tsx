@@ -1,17 +1,14 @@
-import { GetStaticProps, GetStaticPaths } from "next";
-import { Rssdata, getrss } from "../../components/rssreader/getrss";
+import { GetStaticPaths, GetStaticProps } from "next";
+import { memo } from "react";
+import { getrss, Rssdata } from "../../components/rssreader/getrss";
 import Rssreader, {
     rssfeedxml,
 } from "../../components/rssreader/react-module-rssreader";
-const rssreader = ({
-    sitename,
-    data,
-}: {
-    sitename?: string;
-    data?: Rssdata;
-}) => {
-    return <Rssreader sitename={sitename} data={data} />;
-};
+const rssreader = memo(
+    ({ sitename, data }: { sitename?: string; data?: Rssdata }) => {
+        return <Rssreader sitename={sitename} data={data} />;
+    }
+);
 export type Staticresult = {
     sitename?: string;
     data?: Rssdata;

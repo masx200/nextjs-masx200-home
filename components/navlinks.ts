@@ -1,7 +1,7 @@
-import { Linktype } from "./layout";
+import { Linktype } from "./Linktype";
 
 export const navlinks: Linktype[] = [
-    { text: "关于next.js", href: { pathname: "/nextabout" } },
+    { text: "关于next.js", href: { pathname: "/next-about" } },
     { text: "关于REACT", href: { pathname: "/react-about" } },
     { text: "基于REACT的主页", href: { pathname: "/react-home" } },
     { text: "花密网页版", href: { pathname: "/react-huami" } },

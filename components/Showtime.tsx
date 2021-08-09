@@ -1,11 +1,8 @@
 "use strict";
-import React, { useEffect, useState } from "react";
+import React, { memo, useEffect, useState } from "react";
 import { 获取当前时间 } from "./获取当前时间";
 
-// function refreshall() {
-//   $("#allnavbar").click();
-// }
-export function Showtime() {
+export const Showtime = memo(function Showtime() {
     const [nowtime, setnowtime] = useState(获取当前时间());
     useEffect(function () {
         // refreshall();
@@ -18,4 +15,4 @@ export function Showtime() {
         };
     }, []);
     return <h2>现在是 {nowtime} </h2>;
-}
+});

@@ -1,11 +1,11 @@
-import { PropsWithChildren, useEffect, useRef, useState } from "react";
 import { useToggle } from "ahooks";
-import { 我的自定义导航链接 } from "./我的自定义导航链接";
 import { useRouter } from "next/router";
+import { memo, PropsWithChildren, useEffect, useRef, useState } from "react";
+import { loadclipboard } from "./loadclipboard";
 import { navlinks } from "./navlinks";
 import { onload } from "./onload";
-import { loadclipboard } from "./loadclipboard";
-const layout = ({ children }: PropsWithChildren<{}>) => {
+import { 我的自定义导航链接 } from "./我的自定义导航链接";
+const layout = memo(({ children }: PropsWithChildren<{}>) => {
     useEffect(() => {
         onload(loadclipboard);
     }, []);
@@ -108,12 +108,8 @@ const layout = ({ children }: PropsWithChildren<{}>) => {
             </div>
         </div>
     );
-};
+});
 export default layout;
-export interface Linktype {
-    text: string;
-    href: Partial<import("url").UrlObject>;
-}
 const navlinkeles = navlinks.map(({ text, href }, index) => {
     return (
         <li key={index}>

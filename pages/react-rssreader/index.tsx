@@ -1,5 +1,6 @@
-const rssreader = () => {
-    return <Rssreader />;
-};
-export default rssreader;
+import { memo } from "react";
 import Rssreader from "../../components/rssreader/react-module-rssreader";
+const rssreader = memo(() => {
+    return <Rssreader />;
+});
+export default rssreader;

@@ -5,8 +5,8 @@ import Layout from "../components/layout";
 import "../styles/layout.css";
 import "../src/polyfill";
 import MyHead from "../components/myhead";
-
-const app = function MyApp({ Component, pageProps }: AppProps) {
+import { memo } from "react";
+const app = memo(function MyApp({ Component, pageProps }: AppProps) {
     // console.log(Component, pageProps)
     if (pageProps.statusCode) {
         return <Component {...pageProps} />;
@@ -19,6 +19,6 @@ const app = function MyApp({ Component, pageProps }: AppProps) {
             </Layout>
         </>
     );
-};
+});
 
 export default app;

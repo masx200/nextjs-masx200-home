@@ -1,11 +1,11 @@
-"use strict";
 import Head from "next/head";
-import React from "react";
+import React, { memo } from "react";
 import { Showtime } from "../components/Showtime";
-export default function about() {
+("use strict");
+export default memo(function about() {
     return abouteles;
     //   }
-}
+});
 const abouteles = (
     <>
         <Head>

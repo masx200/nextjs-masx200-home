@@ -1,4 +1,6 @@
-export default function myHead() {
+import Head from "next/head";
+import { memo } from "react";
+export default memo(function myHead() {
     return (
         <Head>
             <title>Create Next App</title>
@@ -9,5 +11,4 @@ export default function myHead() {
             />
         </Head>
     );
-}
-import Head from "next/head";
+});

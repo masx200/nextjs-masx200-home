@@ -1,15 +1,13 @@
 import Head from "next/head";
-import React from "react";
+import React, { memo } from "react";
 //@ts-ignore
 import markdwonurls from "../src/utils/markdownurls";
-
 import Markdownreact from "./markdown-react/index";
+
 export const markurl = markdwonurls["masx200-github-io"];
 ("use strict");
 
-// const location = window.location;
-
-export default function home({ markdown }: { markdown: string }) {
+export default memo(function home({ markdown }: { markdown: string }) {
     return (
         <>
             <Head>
@@ -20,4 +18,4 @@ export default function home({ markdown }: { markdown: string }) {
             </div>
         </>
     );
-}
+});

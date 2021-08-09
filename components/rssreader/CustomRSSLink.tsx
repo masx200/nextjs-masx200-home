@@ -1,8 +1,7 @@
 import Link from "next/link";
-import React, { PropsWithChildren } from "react";
+import React, { memo, PropsWithChildren } from "react";
 import { useactivelink } from "../useactivelink";
-
-export function CustomRSSLink({
+export const CustomRSSLink = memo(function CustomRSSLink({
     className = "",
     children,
     href,
@@ -23,4 +22,4 @@ export function CustomRSSLink({
             </a>
         </Link>
     );
-}
+});

@@ -2,13 +2,13 @@
 import React, { useState } from "react";
 
 export function useBindtext(
-    默认值: string | number
+    默认值: string
 ): [
-    string | number,
-    React.Dispatch<React.SetStateAction<string | number>>,
+    string,
+    React.Dispatch<React.SetStateAction<string>>,
     (e: { target: { value: string } }) => void
 ] {
-    var [inputcode, setinputcode] = useState(默认值);
+    var [inputcode, setinputcode] = useState(String(默认值));
     const inputonchange = (e: { target: { value: string } }) => {
         //@ts-ignore
         setinputcode(e.target?.value);

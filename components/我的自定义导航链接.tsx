@@ -1,7 +1,11 @@
 import Link from "next/link";
-import { Linktype } from "./layout";
+import { memo } from "react";
+import { Linktype } from "./Linktype";
 import { useactivelink } from "./useactivelink";
-export function 我的自定义导航链接({ text, href }: Linktype) {
+export const 我的自定义导航链接 = memo(function 我的自定义导航链接({
+    text,
+    href,
+}: Linktype) {
     const active = useactivelink(href);
     return (
         <Link href={href} passHref>
@@ -17,4 +21,4 @@ export function 我的自定义导航链接({ text, href }: Linktype) {
             </a>
         </Link>
     );
-}
+});

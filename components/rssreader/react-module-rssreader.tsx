@@ -20,7 +20,7 @@ function Rssreader({ sitename, data }: { sitename?: string; data?: Rssdata }) {
         : undefined;
 
     useEffect(() => {
-        console.log("sitename", sitename);
+        // console.log("sitename", sitename);
     }, [sitename]);
     const title = useMemo(() => {
         if ("undefined" !== typeof sitename) {
