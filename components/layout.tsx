@@ -1,6 +1,13 @@
 import { useToggle } from "ahooks";
 import { useRouter } from "next/router";
-import { memo, PropsWithChildren, useEffect, useRef, useState } from "react";
+import {
+    memo,
+    PropsWithChildren,
+    useEffect,
+    useRef,
+    useState,
+    useCallback,
+} from "react";
 import { loadclipboard } from "./loadclipboard";
 import { navlinks } from "./navlinks";
 import { onload } from "./onload";
@@ -56,6 +63,12 @@ const layout = memo(({ children }: PropsWithChildren<{}>) => {
             navele.current = e;
         }
     }
+    const togglenavbar = useCallback(() => {
+        toggle();
+    }, []);
+    const shouqinavbar = useCallback(() => {
+        shouqi收起折叠的导航栏菜单();
+    }, []);
     return (
         <div>
             <div
@@ -78,9 +91,7 @@ const layout = memo(({ children }: PropsWithChildren<{}>) => {
                         className="navbar-toggler"
                         type="button"
                         data-toggle="collapse"
-                        onClick={() => {
-                            toggle();
-                        }}
+                        onClick={togglenavbar}
                     >
                         <span className="navbar-toggler-icon" />
                     </button>
@@ -89,9 +100,7 @@ const layout = memo(({ children }: PropsWithChildren<{}>) => {
                         <ul
                             className="nav navbar-nav"
                             id="allnavbar"
-                            onClick={() => {
-                                shouqi收起折叠的导航栏菜单();
-                            }}
+                            onClick={shouqinavbar}
                         >
                             {navlinkeles}
                         </ul>

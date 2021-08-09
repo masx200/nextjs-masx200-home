@@ -26,6 +26,18 @@ import { Showtime } from "./Showtime";
 export default memo(function home() {
     return homeeles;
 });
+const showprimary = () => {
+    tanchu弹出消息通用("primary");
+};
+const showdanger = () => {
+    tanchu弹出消息通用("danger");
+};
+const showsuccess = () => {
+    tanchu弹出消息通用("success");
+};
+const showwarning = () => {
+    tanchu弹出消息通用("warning");
+};
 const homeeles = (
     <>
         <Head>
@@ -79,36 +91,28 @@ const homeeles = (
                         <button
                             className="btn btn-outline-primary btn-lg"
                             //   ref={mybuttonidsbuttonid1}
-                            onClick={() => {
-                                tanchu弹出消息通用("primary");
-                            }}
+                            onClick={showprimary}
                         >
                             弹出首选提示框
                         </button>
                         <button
                             className="btn btn-outline-success btn-lg"
                             //   ref={mybuttonidsbuttonid2}
-                            onClick={() => {
-                                tanchu弹出消息通用("success");
-                            }}
+                            onClick={showsuccess}
                         >
                             弹出成功提示框
                         </button>
                         <button
                             className="btn btn-outline-danger btn-lg"
                             //   ref={mybuttonidsbuttonid3}
-                            onClick={() => {
-                                tanchu弹出消息通用("danger");
-                            }}
+                            onClick={showdanger}
                         >
                             弹出失败提示框
                         </button>
                         <button
                             className="btn btn-outline-warning btn-lg"
                             //   ref={mybuttonidsbuttonid4}
-                            onClick={() => {
-                                tanchu弹出消息通用("warning");
-                            }}
+                            onClick={showwarning}
                         >
                             弹出警告提示框
                         </button>
