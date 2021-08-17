@@ -1,4 +1,4 @@
- export default {
+export default {
     "webpack-react-vue-spa-awesome-config":
         "https://cdn.jsdelivr.net/gh/masx200/webpack-react-vue-spa-awesome-config/README.md",
     "excellent-vscode-extensions-for-javascript":
