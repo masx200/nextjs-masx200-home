@@ -2,7 +2,7 @@ import { useToggle } from "ahooks";
 import { useRouter } from "next/router";
 import { memo, PropsWithChildren, useCallback, useEffect } from "react";
 import { loadclipboard } from "./loadclipboard";
-import { navlinks } from "./navlinks";
+import { navlinkeles } from "./navlinkeles";
 import { onload } from "./onload";
 import { useobservehight } from "./useobservehight";
 import { 我的自定义导航链接 } from "./我的自定义导航链接";
@@ -94,10 +94,4 @@ const layout = memo(({ children }: PropsWithChildren<{}>) => {
     );
 });
 export default layout;
-const navlinkeles = navlinks.map(({ text, href }, index) => {
-    return (
-        <li key={index}>
-            <我的自定义导航链接 href={href} text={text} />
-        </li>
-    );
-});
+
