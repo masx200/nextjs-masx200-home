@@ -16,6 +16,9 @@ export function useobservehight(
     }, []);
     useEffect(() => {
         createobserver();
+        return()=>{
+            observer.current?.disconnect()
+        }
     }, []);
     const navbarref = useCallback(function navbarref(e?: Element | null) {
         if (e) {
