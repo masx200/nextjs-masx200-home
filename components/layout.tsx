@@ -1,36 +1,17 @@
 import { useToggle } from "ahooks";
 import { useRouter } from "next/router";
-import {
-    memo,
-    PropsWithChildren,
-    useEffect,
-    useRef,
-    useState,
-    useCallback,
-} from "react";
+import { memo, PropsWithChildren, useCallback, useEffect } from "react";
 import { loadclipboard } from "./loadclipboard";
 import { navlinks } from "./navlinks";
 import { onload } from "./onload";
+import { useobservehight } from "./useobservehight";
 import { 我的自定义导航链接 } from "./我的自定义导航链接";
 const layout = memo(({ children }: PropsWithChildren<{}>) => {
+    const [navheight, navbarref] = useobservehight(142);
     useEffect(() => {
         onload(loadclipboard);
     }, []);
-    const navele = useRef<Element>();
-    const observer = useRef<ResizeObserver>();
-    function createobserver() {
-        observer.current =
-            observer.current ||
-            new ResizeObserver((entry) => {
-                // console.log(entry);
-                const height = navele.current?.clientHeight;
-                height && setnavheight(height);
-            });
-    }
-    useEffect(() => {
-        createobserver();
-    }, []);
-    const [navheight, setnavheight] = useState(142);
+
     const router = useRouter();
 
     const [state, { toggle }] = useToggle(true);
@@ -56,13 +37,7 @@ const layout = memo(({ children }: PropsWithChildren<{}>) => {
 
         scrollTo(0, 0);
     }
-    function navbarref(e?: Element | null) {
-        if (e) {
-            createobserver();
-            observer.current?.observe(e);
-            navele.current = e;
-        }
-    }
+
     const togglenavbar = useCallback(() => {
         toggle();
     }, []);
