@@ -31,6 +31,7 @@
         "cssnano": "^5.0.7",
         "dompurify": "^2.3.0",
         "fast-xml-parser": "^3.19.0",
+        "flowerpassword.js": "^3.0.2",
         "fork-ts-checker-webpack-plugin": "^6.3.1",
         "highlight.js": "^11.2.0",
         "jquery": "^3.6.0",
