@@ -17,6 +17,8 @@
         "export": "next export"
     },
     "dependencies": {
+        "@babel/core": "^7.15.0",
+        "@babel/plugin-transform-react-constant-elements": "^7.14.5",
         "@highlightjs/cdn-assets": "^11.2.0",
         "@types/dompurify": "^2.2.3",
         "@types/jquery": "^3.5.6",

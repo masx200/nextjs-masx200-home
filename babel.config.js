@@ -11,8 +11,9 @@ module.exports = function (api) {
                 },
             ],
         ],
-        plugins: [api.env("production") && "babel-plugin-clean-code"].filter(
-            Boolean
-        ),
+        plugins: [
+            api.env("production") && "babel-plugin-clean-code",
+            "@babel/plugin-transform-react-constant-elements",
+        ].filter(Boolean),
     };
 };
