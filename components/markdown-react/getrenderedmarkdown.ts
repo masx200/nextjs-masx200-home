@@ -6,7 +6,7 @@ import { fetchtext } from "./fetchtext";
 import createDOMPurify from "dompurify";
 import { JSDOM } from "jsdom";
 
-const DOMPurify = (createpurify())
+const DOMPurify = createpurify();
 
 // console.log(DOMPurify);
 // console.log(hljs)
@@ -23,12 +23,10 @@ class myrenderer extends Renderer {
     }
 }
 function createpurify() {
-   
-        const window = new JSDOM("").window;
-        //@ts-ignore
-        const DOMPurify = createDOMPurify(window);
-        return DOMPurify;
-  
+    const window = new JSDOM("").window;
+    //@ts-ignore
+    const DOMPurify = createDOMPurify(window);
+    return DOMPurify;
 }
 
 export async function getrenderedmarkdown(src: string) {
