@@ -12,5 +12,5 @@ export default reacthome;
 export const getStaticProps: GetStaticProps = async (context) => {
     // console.log(context);
     const markdown = await getrenderedmarkdown(markurl);
-    return { revalidate: false, props: { markdown } };
+    return { revalidate: 86400, props: { markdown } };
 };
