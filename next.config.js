@@ -18,21 +18,21 @@ const nextConfig = {
         config,
         { buildId, dev, isServer, defaultLoaders, webpack, ...rest }
     ) => {
-        console.log({
-            buildId,
-            dev,
-            isServer,
-            defaultLoaders,
-            webpack,
-            ...rest,
-        });
+        // console.log({
+        //     buildId,
+        //     dev,
+        //     isServer,
+        //     defaultLoaders,
+        //     webpack,
+        //     ...rest,
+        // });
         const ftcwp = new ForkTsCheckerWebpackPlugin();
         config.plugins = [...config.plugins, ftcwp];
 
         if (!dev) {
             config.optimization.minimize = true;
         }
-        console.log({ config });
+        // console.log({ config });
         return config;
     },
 };
