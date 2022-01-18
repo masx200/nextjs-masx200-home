@@ -1,7 +1,6 @@
 {
     "name": "@masx200/nextjs-masx200-home",
-    "version": "1.1.2",
-    "private": true,
+    "version": "1.2.0",
     "husky": {
         "hooks": {
             "pre-commit": "npm run precommit"
@@ -23,7 +22,7 @@
         "@types/dompurify": "^2.2.3",
         "@types/jquery": "^3.5.6",
         "@types/jsdom": "^16.2.13",
-        "@types/marked": "^2.0.4",
+        "@types/marked": "^4.0.1",
         "@types/node": "^16.4.10",
         "@types/react": "^17.0.15",
         "ahooks": "^2.10.9",
