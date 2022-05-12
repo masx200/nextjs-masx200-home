@@ -9,7 +9,12 @@ import { memo } from "react";
 const app = memo(function MyApp({ Component, pageProps }: AppProps) {
     // console.log(Component, pageProps)
     if (pageProps.statusCode) {
-        return <Component {...pageProps} />;
+        return (
+            <>
+                <MyHead />
+                <Component {...pageProps} />
+            </>
+        );
     }
     return (
         <>
