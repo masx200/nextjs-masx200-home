@@ -2015,6 +2015,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"async@npm:^3.2.3":
+  version: 3.2.3
+  resolution: "async@npm:3.2.3"
+  checksum: c4bee57ab2249af3dc83ca3ef9acfa8e822c0d5e5aa41bae3eaf7f673648343cd64ecd7d26091ffd357f3f044428b17b5f00098494b6cf8b6b3e9681f0636ca1
+  languageName: node
+  linkType: hard
+
 "asynckit@npm:^0.4.0":
   version: 0.4.0
   resolution: "asynckit@npm:0.4.0"
@@ -2335,7 +2342,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^4.1.0":
+"chalk@npm:^4.0.2, chalk@npm:^4.1.0":
   version: 4.1.2
   resolution: "chalk@npm:4.1.2"
   dependencies:
@@ -2974,10 +2981,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ejs@npm:^2.6.1":
-  version: 2.7.4
-  resolution: "ejs@npm:2.7.4"
-  checksum: a1d2bfc7d1f0b39e99ae19b20c9469a25aeddba1ffc225db098110b18d566f73772fcdcc740b108cfda7452276f67d7b64eb359f90285414c942f4ae70713371
+"ejs@npm:3.1.7":
+  version: 3.1.7
+  resolution: "ejs@npm:3.1.7"
+  dependencies:
+    jake: ^10.8.5
+  bin:
+    ejs: bin/cli.js
+  checksum: fe40764af39955ce8f8b116716fc8b911959946698edb49ecab85df597746c07aa65d5b74ead28a1e2ffa75b0f92d9bedd752f1c29437da6137b3518271e988c
   languageName: node
   linkType: hard
 
@@ -3154,6 +3165,15 @@ __metadata:
   dependencies:
     reusify: ^1.0.4
   checksum: 3877a63bee4f63af9277d6169a766804c9e1c7829a070b6843c5b799aa72177e71465427889c96510e5608c334dd3c912ab0b3ca70c1c8c4c1b03449d9f2c5ba
+  languageName: node
+  linkType: hard
+
+"filelist@npm:^1.0.1":
+  version: 1.0.4
+  resolution: "filelist@npm:1.0.4"
+  dependencies:
+    minimatch: ^5.0.1
+  checksum: a303573b0821e17f2d5e9783688ab6fbfce5d52aaac842790ae85e704a6f5e4e3538660a63183d6453834dedf1e0f19a9dadcebfa3e926c72397694ea11f5160
   languageName: node
   linkType: hard
 
@@ -3866,6 +3886,20 @@ __metadata:
   version: 2.0.0
   resolution: "isexe@npm:2.0.0"
   checksum: 26bf6c5480dda5161c820c5b5c751ae1e766c587b1f951ea3fcfc973bafb7831ae5b54a31a69bd670220e42e99ec154475025a468eae58ea262f813fdc8d1c62
+  languageName: node
+  linkType: hard
+
+"jake@npm:^10.8.5":
+  version: 10.8.5
+  resolution: "jake@npm:10.8.5"
+  dependencies:
+    async: ^3.2.3
+    chalk: ^4.0.2
+    filelist: ^1.0.1
+    minimatch: ^3.0.4
+  bin:
+    jake: ./bin/cli.js
+  checksum: 56c913ecf5a8d74325d0af9bc17a233bad50977438d44864d925bb6c45c946e0fee8c4c1f5fe2225471ef40df5222e943047982717ebff0d624770564d3c46ba
   languageName: node
   linkType: hard
 
