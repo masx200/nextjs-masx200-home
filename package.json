@@ -24,7 +24,7 @@
         "@types/jsdom": "^16.2.13",
         "@types/marked": "^4.0.1",
         "@types/node": "^16.4.10",
-        "@types/react": "^17.0.15",
+        "@types/react": "^18.0.9",
         "ahooks": "^2.10.9",
         "autoprefixer": "^10.3.1",
         "babel-plugin-clean-code": "^0.0.3",
