@@ -15,15 +15,17 @@ export type Staticresult = {
 };
 export type StaticParams = { sitename?: string };
 export default rssreader;
-export const getStaticProps: GetStaticProps<Staticresult, StaticParams> =
-    async (context) => {
-        // console.log(context);
-        const sitename = context.params?.sitename;
-        const src = sitename ? Reflect.get(rssfeedxml, sitename) : undefined;
-        const data = src ? await getrss(src) : undefined;
-        // console.log(sitename, data);
-        return { revalidate: 3600, props: { sitename, data } };
-    };
+export const getStaticProps: GetStaticProps<
+    Staticresult,
+    StaticParams
+> = async (context) => {
+    // console.log(context);
+    const sitename = context.params?.sitename;
+    const src = sitename ? Reflect.get(rssfeedxml, sitename) : undefined;
+    const data = src ? await getrss(src) : undefined;
+    // console.log(sitename, data);
+    return { revalidate: 3600, props: { sitename, data } };
+};
 export const getStaticPaths: GetStaticPaths<{ sitename: string }> = () => {
     return {
         fallback: false,
