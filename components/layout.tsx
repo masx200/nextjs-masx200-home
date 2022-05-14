@@ -14,7 +14,7 @@ const layout = memo(({ children }: PropsWithChildren<{}>) => {
 
     const router = useRouter();
 
-    const [state, { toggle }] = useToggle(true);
+    const [state, { toggle, set }] = useToggle(true);
     useEffect(() => {
         shouqi收起折叠的导航栏菜单();
     }, [router.pathname, router.query]);
@@ -32,7 +32,7 @@ const layout = memo(({ children }: PropsWithChildren<{}>) => {
 
     function shouqi收起折叠的导航栏菜单() {
         if (window.innerWidth <= 500) {
-            toggle(false);
+            set(false);
         }
 
         scrollTo(0, 0);
