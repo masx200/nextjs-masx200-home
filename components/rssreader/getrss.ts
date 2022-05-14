@@ -1,5 +1,5 @@
-import * as parser from "fast-xml-parser";
-
+import { XMLParser } from "fast-xml-parser";
+const parser = new XMLParser();
 import { fetchtext } from "../markdown-react/fetchtext";
 import { htmltotext } from "./htmltotext";
 

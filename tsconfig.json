@@ -13,7 +13,8 @@
         "noEmit": true,
         "esModuleInterop": true,
         "resolveJsonModule": true,
-        "isolatedModules": true
+        "isolatedModules": true,
+        "incremental": true
     },
     "include": ["pages", "components", "src", "next-env.d.ts"],
     "exclude": ["node_modules"]
