@@ -46,7 +46,7 @@
         "react": "^18.1.0",
         "react-dom": "^18.1.0",
         "styled-jsx-plugin-postcss": "^4.0.1",
-        "typescript": "^4.6.4"
+        "typescript": "^4.7.2"
     },
     "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
     "main": "index.js",
