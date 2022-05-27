@@ -29,7 +29,7 @@
         "autoprefixer": "^10.3.1",
         "babel-plugin-clean-code": "^0.0.3",
         "clipboard": "^2.0.8",
-        "cssnano": "^5.1.7",
+        "cssnano": "^5.1.9",
         "dompurify": "^2.3.8",
         "fast-xml-parser": "^4.0.7",
         "flowerpassword.js": "^3.0.2",
