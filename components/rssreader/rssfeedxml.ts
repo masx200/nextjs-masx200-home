@@ -1,7 +1,6 @@
 const rssbase = "https://";
 const rssxml1 = rssbase + "www.tmtpost.com/feed/";
 
-
 const rssxml2 = rssbase + "www.iplaysoft.com/feed/";
 
 const rssxml3 = rssbase + "www.landiannews.com/feed/";
