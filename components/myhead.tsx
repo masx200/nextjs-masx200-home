@@ -15,11 +15,11 @@ export default memo(function myHead() {
             />
             <link
                 rel="stylesheet"
-                href="https://cdn.jsdelivr.net/gh/masx200/masx200.github.io@4.2.2/src/assetscss/github-6556dfa9be535e551ffffaadfecdad99.min.css"
+                href="/github-6556dfa9be535e551ffffaadfecdad99.min.css"
             />
             <link
                 rel="stylesheet"
-                href="https://cdn.jsdelivr.net/gh/masx200/masx200.github.io@4.2.2/src/assetscss/github-frameworks-a2fba223d5af91496cac70d4ec3624df.min.css"
+                href="/github-frameworks-a2fba223d5af91496cac70d4ec3624df.min.css"
             />
             <link
                 rel="stylesheet"
