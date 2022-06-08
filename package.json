@@ -54,8 +54,7 @@
     "author": "masx200 <masx200@qq.com>",
     "license": "ISC",
     "devDependencies": {
-        "cross-env": "^7.0.3",
-        "husky": "^8.0.1"
+        "cross-env": "^7.0.3"
     },
     "repository": {
         "type": "git",
