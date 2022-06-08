@@ -37,7 +37,7 @@
         "highlight.js": "^11.2.0",
         "jquery": "^3.6.0",
         "jsdom": "^19.0.0",
-        "marked": "^4.0.10",
+        "marked": "^4.0.16",
         "next": "^12.1.6",
         "next-pwa": "^5.5.2",
         "postcss": "^8.3.6",
