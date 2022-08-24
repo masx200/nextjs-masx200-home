@@ -14,37 +14,30 @@ const nextConfig = {
         ignoreDuringBuilds: true,
     },
     poweredByHeader: false,
-    webpack: (
-        config,
-        { buildId, dev, isServer, defaultLoaders, webpack, ...rest }
-    ) => {
-        // console.log({
-        //     buildId,
-        //     dev,
-        //     isServer,
-        //     defaultLoaders,
-        //     webpack,
-        //     ...rest,
-        // });
-        const ftcwp = new ForkTsCheckerWebpackPlugin();
-        config.plugins = [...config.plugins, ftcwp];
-
-        if (!dev) {
-            config.optimization.minimize = true;
-        }
-        // console.log({ config });
-        return config;
-    },
-};
-module.exports = withPWA(
-    Object.assign(
+    webpack: (config, { dev }) =>
+        // { buildId, dev, isServer, defaultLoaders, webpack, ...rest }
         {
-            pwa: {
-                disable: process.env.NODE_ENV === "development",
-                dest: "public",
-                runtimeCaching,
-            },
+            // console.log({
+            //     buildId,
+            //     dev,
+            //     isServer,
+            //     defaultLoaders,
+            //     webpack,
+            //     ...rest,
+            // });
+            const ftcwp = new ForkTsCheckerWebpackPlugin();
+            config.plugins = [...config.plugins, ftcwp];
+
+            if (!dev) {
+                config.optimization.minimize = true;
+            }
+            // console.log({ config });
+            return config;
         },
-        nextConfig
-    )
-);
+};
+module.exports = withPWA({
+    register: true,
+    disable: process.env.NODE_ENV === "development",
+    dest: "public",
+    runtimeCaching,
+})(nextConfig);
