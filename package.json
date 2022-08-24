@@ -1,18 +1,12 @@
 {
     "name": "@masx200/nextjs-masx200-home",
     "version": "1.3.0",
-    "husky": {
-        "hooks": {
-            "pre-commit": "npm run precommit"
-        }
-    },
     "scripts": {
         "precommit": "npm run format ||node -v",
         "dev": "cross-env NODE_OPTIONS='--inspect' next dev -p 5000",
         "build": "next build",
         "start": "next start",
         "format": "prettier --write *.ts *.js *.json *.md */*.css */*.js */*.ts */*.tsx */*/*.js */*.jsx  */*/*/*.ts */*/*.ts */*/*.tsx",
-        "prepare": "husky install",
         "export": "next export"
     },
     "dependencies": {
@@ -46,6 +40,7 @@
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "styled-jsx-plugin-postcss": "^4.0.1",
+        "terser": "^5.15.0",
         "typescript": "^4.6.4"
     },
     "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
@@ -64,6 +59,10 @@
     "resolutions": {
         "react": "^18.1.0",
         "ejs": "3.1.7",
+        "terser": "5.15.0",
         "react-dom": "^18.1.0"
+    },
+    "overrides": {
+        "terser": "5.15.0"
     }
 }
