@@ -15,7 +15,7 @@
         "@highlightjs/cdn-assets": "^11.2.0",
         "@types/dompurify": "^2.3.3",
         "@types/jquery": "^3.5.14",
-        "@types/jsdom": "^16.2.14",
+        "@types/jsdom": "^20.0.0",
         "@types/marked": "^4.0.3",
         "@types/node": "^18.7.11",
         "@types/react": "^18.0.9",
