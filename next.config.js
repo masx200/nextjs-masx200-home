@@ -2,7 +2,7 @@ const withPWA = require("next-pwa");
 const runtimeCaching = require("next-pwa/cache");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 // @ts-check
-"use strict";
+("use strict");
 
 /**
  * @type {Partial< import('next/dist/next-server/server/config').NextConfig>}
@@ -14,8 +14,10 @@ const nextConfig = {
         ignoreDuringBuilds: true,
     },
     poweredByHeader: false,
-    webpack: (config, { dev }) => // { buildId, dev, isServer, defaultLoaders, webpack, ...rest }
-    {
+    webpack: (
+        config,
+        { dev } // { buildId, dev, isServer, defaultLoaders, webpack, ...rest }
+    ) => {
         // console.log({
         //     buildId,
         //     dev,

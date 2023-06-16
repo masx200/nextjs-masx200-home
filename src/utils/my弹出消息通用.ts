@@ -8,7 +8,7 @@ function guid() {
             var r = (Math.random() * 16) | 0,
                 v = c == "x" ? r : (r & 0x3) | 0x8;
             return v.toString(16);
-        },
+        }
     );
 }
 function tanchu弹出消息通用(infotype: string) {
@@ -38,12 +38,12 @@ function tanchu弹出消息通用(infotype: string) {
             `<div id="${id}" class="alert alert-${infotype} alert-dismissible fade show" data-tanchuxiaoxi>
     <button type="button" class="close" data-dismiss="alert">&times;</button>
     <strong>${textinfo}!</strong> 操作${textinfo}提示信息。
-    </div>`,
+    </div>`
         ).fadeTo(5000, 0.5, () => {
             // console.log(jQuery("#" + id));
             jQuery("#" + id).remove();
             // 调整导航栏和主体的距离();
-        }),
+        })
     );
 }
 const jQuery = $;

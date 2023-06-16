@@ -8,7 +8,7 @@ import { Rssviewer } from "./Rssviewer";
 
 export { rssfeedxml };
 /* eslint-disable react/prop-types */
-"use strict";
+("use strict");
 
 //@ts-ignore
 //@ts-ignore
@@ -36,9 +36,11 @@ function Rssreader({ sitename, data }: { sitename?: string; data?: Rssdata }) {
             </Head>
             <div className="">
                 {rssmain}
-                {data && rssfeedurl
-                    ? <Rssviewer src={rssfeedurl} data={data} />
-                    : <React.Fragment />}
+                {data && rssfeedurl ? (
+                    <Rssviewer src={rssfeedurl} data={data} />
+                ) : (
+                    <React.Fragment />
+                )}
             </div>
         </>
     );

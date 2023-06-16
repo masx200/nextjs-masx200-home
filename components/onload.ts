@@ -12,7 +12,7 @@ export function onload(call: () => void) {
             () => {
                 return call();
             },
-            { once: true },
+            { once: true }
         );
     }
 }

@@ -15,18 +15,20 @@ import { mangle } from "marked-mangle";
 // @ts-ignore
 import { marked } from "marked";
 import { markedHighlight } from "marked-highlight";
-marked.use(markedHighlight({
-    langPrefix: "hljs language-",
-    highlight(code, lang) {
-        // console.log(code,lang)
-        // debugger
-        const language = hljs.getLanguage(lang);
-        // console.log(language)
-        return language
-            ? hljs.highlight(code, { language: lang }).value
-            : hljs.highlightAuto(code).value;
-    },
-}));
+marked.use(
+    markedHighlight({
+        langPrefix: "hljs language-",
+        highlight(code, lang) {
+            // console.log(code,lang)
+            // debugger
+            const language = hljs.getLanguage(lang);
+            // console.log(language)
+            return language
+                ? hljs.highlight(code, { language: lang }).value
+                : hljs.highlightAuto(code).value;
+        },
+    })
+);
 const options = {
     // prefix: "my-prefix-",
 };
@@ -44,7 +46,7 @@ export async function getrenderedmarkdown(src: string): Promise<string> {
     const text = await fetchtext(src);
 
     const dirty = marked(text, {
-        // renderer: new myrenderer(),
+        langPrefix: "hljs language-", // renderer: new myrenderer(),
         // baseUrl: src,
         // highlight(code, lang) {
 
@@ -56,4 +58,3 @@ export async function getrenderedmarkdown(src: string): Promise<string> {
     const html = element.innerHTML;
     return html;
 }
-
