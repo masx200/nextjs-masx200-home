@@ -3,7 +3,7 @@ import Head from "next/head";
 import React, { memo, useCallback, useEffect, useRef } from "react";
 import { generatehuami } from "./generatehuami";
 import { useBindtext } from "./useBindtext";
-("use strict");
+"use strict";
 export default memo(function huami() {
     // useEffect(() => {
     //     document.title = "masx200的github主页-" + "花密  不一样的密码管理工具";
@@ -14,7 +14,7 @@ export default memo(function huami() {
     const copyokref = useRef<HTMLElement>();
     const handlechange = useCallback(function handlechang1e(
         inputtext1: string,
-        inputtext2: string
+        inputtext2: string,
     ) {
         // inputtext1, inputtext2
         //   console.log(this);
@@ -33,11 +33,10 @@ export default memo(function huami() {
         //   console.log("keysave",keysave)
         //   })();
         //
-    },
-    []);
+    }, []);
 
     const functioncopy = useCallback(function functionc1opy(
-        inputtext3: string
+        inputtext3: string,
     ) {
         if (
             inputtext3
@@ -58,8 +57,7 @@ export default memo(function huami() {
                     $(okele).hide();
                 });
         }
-    },
-    []);
+    }, []);
     // [inputtext3]
     useEffect(() => {
         /*
@@ -75,17 +73,17 @@ export default memo(function huami() {
         (e: React.ChangeEvent<HTMLInputElement>): void => {
             onchangeinputtext1(e);
         },
-        []
+        [],
     );
     const onchange2 = useCallback(
         (e: React.ChangeEvent<HTMLInputElement>): void => {
             onchangeinputtext2(e);
         },
-        []
+        [],
     );
     const onchange3 = useCallback(
         (e: React.ChangeEvent<HTMLInputElement>): void => onchangeinputtext3(e),
-        []
+        [],
     );
     return (
         <>
@@ -158,7 +156,6 @@ export default memo(function huami() {
                                         data-clipboard-target=".code16-F3345173-D776-8853-D5BE-65C8131C4729"
                                         className="btn btn-lg btn copycode16d btn-info"
                                         style={{ width: " 100%" }}
-
                                         //   "width: 100%;"
                                     >
                                         点击复制
@@ -182,7 +179,8 @@ export default memo(function huami() {
                         </div>
                     </div>
                 </div>
-                <style jsx>{`
+                <style jsx>
+                    {`
                     .flowerpassword a {
                         color: #42b983;
                     }
@@ -889,7 +887,8 @@ export default memo(function huami() {
                     .flowerpassword footer p a:hover {
                         color: #333;
                     }
-                `}</style>
+                `}
+                </style>
             </div>
         </>
     );

@@ -22,7 +22,7 @@ import 首页推荐网址目录 from "../src/首页推荐网址目录";
 import { Showtime } from "./Showtime";
 //@ts-ignore
 // import { 调整导航栏和主体的距离 } from "../src/调整导航栏和主体的距离.js";
-("use strict");
+"use strict";
 export default memo(function home() {
     return homeeles;
 });
@@ -70,9 +70,7 @@ const homeeles = (
                                         <p>
                                             <b>
                                                 <a
-                                                    className={
-                                                        "mui-btn mui-btn-primary mui-btn-outlined"
-                                                    }
+                                                    className={"mui-btn mui-btn-primary mui-btn-outlined"}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
                                                     href={t[0]}

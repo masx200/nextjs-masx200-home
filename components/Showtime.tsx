@@ -14,5 +14,5 @@ export const Showtime = memo(function Showtime() {
             clearInterval(timer);
         };
     }, []);
-    return <h2>现在是 {nowtime} </h2>;
+    return <h2>现在是 {nowtime}</h2>;
 });

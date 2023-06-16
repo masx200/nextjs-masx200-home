@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React, { memo } from "react";
 import { Showtime } from "../components/Showtime";
-("use strict");
+"use strict";
 export default memo(function about() {
     return abouteles;
     //   }
