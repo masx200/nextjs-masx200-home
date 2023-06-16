@@ -55,14 +55,11 @@
         "type": "git",
         "url": "https://github.com.cnpmjs.org/masx200/nextjs-masx200-home"
     },
-    
     "resolutions": {
         "react": "^18.1.0",
         "ejs": "3.1.7",
         "terser": "5.15.0",
         "react-dom": "^18.1.0"
     },
-    "overrides": {
-       
-    }
+    "overrides": {}
 }
