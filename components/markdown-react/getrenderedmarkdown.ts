@@ -12,6 +12,19 @@ import hljs from "../../src/assetsjs/highlight.min.js";
 import { mangle } from "marked-mangle";
 // @ts-ignore
 import { marked } from "marked";
+import { markedHighlight } from "marked-highlight";
+marked.use(markedHighlight({
+    langPrefix: "hljs language-",
+    highlight(code, lang) {
+        // console.log(code,lang)
+        // debugger
+        const language = hljs.getLanguage(lang);
+        // console.log(language)
+        return language
+            ? hljs.highlight(code, { language: lang }).value
+            : hljs.highlightAuto(code).value;
+    },
+}));
 const options = {
     // prefix: "my-prefix-",
 };
@@ -38,15 +51,9 @@ export async function getrenderedmarkdown(src: string): Promise<string> {
     const dirty = marked(text, {
         // renderer: new myrenderer(),
         // baseUrl: src,
-        highlight(code, lang) {
-            // console.log(code,lang)
-            // debugger
-            const language = hljs.getLanguage(lang);
-            // console.log(language)
-            return language
-                ? hljs.highlight(code, { language: lang }).value
-                : hljs.highlightAuto(code).value;
-        },
+        // highlight(code, lang) {
+
+        // },
     });
     const clean = DOMPurify.sanitize(dirty);
     const element = htmltoelement(`<div>${clean}</div>`);
