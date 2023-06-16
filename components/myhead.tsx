@@ -12,11 +12,11 @@ export default memo(function myHead() {
 
             <link
                 rel="stylesheet"
-                href="./github-6556dfa9be535e551ffffaadfecdad99.min.css"
+                href="https://nextjs-masx200-home-masx200.netlify.app/github-6556dfa9be535e551ffffaadfecdad99.min.css"
             />
             <link
                 rel="stylesheet"
-                href="./github-frameworks-a2fba223d5af91496cac70d4ec3624df.min.css"
+                href="https://nextjs-masx200-home-masx200.netlify.app/github-frameworks-a2fba223d5af91496cac70d4ec3624df.min.css"
             />
             <link
                 rel="stylesheet"
