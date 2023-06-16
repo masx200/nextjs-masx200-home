@@ -9,10 +9,7 @@ export default memo(function myHead() {
                 name="viewport"
                 content="initial-scale=1.0, width=device-width"
             />
-            <link
-                rel="stylesheet"
-                href="https://cdn.staticfile.org/mui/3.7.1/css/mui.min.css"
-            />
+
             <link
                 rel="stylesheet"
                 href="./github-6556dfa9be535e551ffffaadfecdad99.min.css"
@@ -20,6 +17,10 @@ export default memo(function myHead() {
             <link
                 rel="stylesheet"
                 href="./github-frameworks-a2fba223d5af91496cac70d4ec3624df.min.css"
+            />
+            <link
+                rel="stylesheet"
+                href="https://cdn.staticfile.org/mui/3.7.1/css/mui.min.css"
             />
             <link
                 rel="stylesheet"

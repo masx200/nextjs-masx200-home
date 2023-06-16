@@ -42,3 +42,4 @@ public/workbox-ea903bce.js
 *.gz
 *.tsbuildinfo
 public/*.js
+checks.json
