@@ -8,17 +8,17 @@ export const 我的自定义导航链接 = memo(function 我的自定义导航�
 }: Linktype) {
     const active = useactivelink(href);
     return (
-        <Link href={href} passHref>
-            <a
-                className={[
-                    "navbar-brand mui-btn mui-btn-primary mui-btn-outlined",
-                    active && "active",
-                ]
-                    .filter(Boolean)
-                    .join(" ")}
-            >
-                {text}
-            </a>
+        <Link
+            href={href}
+            passHref
+            className={[
+                "navbar-brand mui-btn mui-btn-primary mui-btn-outlined",
+                active && "active",
+            ]
+                .filter(Boolean)
+                .join(" ")}
+        >
+            {text}
         </Link>
     );
 });

@@ -11,15 +11,14 @@ export const CustomRSSLink = memo(function CustomRSSLink({
 >) {
     const active = useactivelink(href);
     return (
-        <Link href={href}>
-            <a
-                className={[className, active && "active"]
-                    .filter(Boolean)
-                    .join(" ")}
-                {...rest}
-            >
-                {children}
-            </a>
+        <Link
+            href={href}
+            className={[className, active && "active"]
+                .filter(Boolean)
+                .join(" ")}
+            {...rest}
+        >
+            {children}
         </Link>
     );
 });
