@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [22.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -29,4 +29,4 @@ jobs:
     - run: npm i -g cnpm
     - run: cnpm install
     - run: npm run build 
-    - run: npm run export
+    # - run: npm run export
