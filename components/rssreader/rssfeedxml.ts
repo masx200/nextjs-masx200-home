@@ -9,7 +9,7 @@ const rssxml4 = rssbase + "www.ithome.com/feed/";
 
 const rssxml5 = rssbase + "www.ifanr.com/feed/";
 
-const rssxml6 = rssbase + "www.pingwest.com/feed/";
+// const rssxml6 = rssbase + "www.pingwest.com/feed/";
 
 export default {
     tmtpost: rssxml1,
@@ -17,5 +17,5 @@ export default {
     landiannews: rssxml3,
     ithome: rssxml4,
     ifanr: rssxml5,
-    pingwest: rssxml6,
+    // pingwest: rssxml6,
 };
