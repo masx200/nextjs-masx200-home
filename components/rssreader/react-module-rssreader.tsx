@@ -96,7 +96,7 @@ const rssmain = (
                 >
                     加载ifanr
                 </CustomRSSLink>
-                <CustomRSSLink
+{/*                 <CustomRSSLink
                     href={{
                         pathname: "/react-rssreader" + "/" + "pingwest",
                     }}
@@ -104,7 +104,7 @@ const rssmain = (
                     className="mui-btn mui-btn-primary mui-btn-outlined btn-lg"
                 >
                     加载pingwest
-                </CustomRSSLink>
+                </CustomRSSLink> */}
             </ul>
         </nav>
     </>
