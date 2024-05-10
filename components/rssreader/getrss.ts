@@ -54,7 +54,7 @@ export const getrss = async function (src: string): Promise<Rssdata> {
             des = htmltotext(des);
             // console.log(des);
             return { link, title, description: des };
-        }
+        },
     );
     const content = myrsscontent;
     return { title, content, description };

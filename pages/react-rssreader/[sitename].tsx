@@ -7,7 +7,7 @@ import Rssreader, {
 const rssreader = memo(
     ({ sitename, data }: { sitename?: string; data?: Rssdata }) => {
         return <Rssreader sitename={sitename} data={data} />;
-    }
+    },
 );
 export type Staticresult = {
     sitename?: string;

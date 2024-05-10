@@ -2,12 +2,13 @@ const withPWA = require("next-pwa");
 const runtimeCaching = require("next-pwa/cache");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 // @ts-check
-("use strict");
+"use strict";
 
 /**
  * @type {Partial< import('next/dist/next-server/server/config').NextConfig>}
  */
 const nextConfig = {
+    output: "export",
     eslint: {
         // Warning: Dangerously allow production builds to successfully complete even if
         // your project has ESLint errors.
@@ -16,7 +17,7 @@ const nextConfig = {
     poweredByHeader: false,
     webpack: (
         config,
-        { dev } // { buildId, dev, isServer, defaultLoaders, webpack, ...rest }
+        { dev }, // { buildId, dev, isServer, defaultLoaders, webpack, ...rest }
     ) => {
         // console.log({
         //     buildId,
