@@ -8,6 +8,7 @@ const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
  * @type {Partial< import('next/dist/next-server/server/config').NextConfig>}
  */
 const nextConfig = {
+     output: 'export',
     eslint: {
         // Warning: Dangerously allow production builds to successfully complete even if
         // your project has ESLint errors.
