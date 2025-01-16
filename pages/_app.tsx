@@ -6,6 +6,8 @@ import "../styles/layout.css";
 import "../src/polyfill";
 import MyHead from "../components/myhead";
 import { memo } from "react";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const app = memo(function MyApp({ Component, pageProps }: AppProps) {
     // console.log(Component, pageProps)
     if (pageProps.statusCode) {
@@ -13,6 +15,8 @@ const app = memo(function MyApp({ Component, pageProps }: AppProps) {
             <>
                 <MyHead />
                 <Component {...pageProps} />
+                <Analytics />
+                <SpeedInsights />
             </>
         );
     }
@@ -22,6 +26,8 @@ const app = memo(function MyApp({ Component, pageProps }: AppProps) {
             <Layout>
                 <Component {...pageProps} />
             </Layout>
+            <Analytics />
+            <SpeedInsights />
         </>
     );
 });
