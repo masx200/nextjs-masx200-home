@@ -5,7 +5,7 @@ import markdwonurls from "../src/utils/markdownurls";
 import Markdownreact from "./markdown-react/index";
 
 export const markurl = markdwonurls["masx200-github-io"];
-"use strict";
+("use strict");
 
 export default memo(function home({ markdown }: { markdown: string }) {
     return (

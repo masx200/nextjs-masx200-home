@@ -3,7 +3,7 @@ import Head from "next/head";
 import React, { memo, useCallback, useEffect, useRef } from "react";
 import { generatehuami } from "./generatehuami";
 import { useBindtext } from "./useBindtext";
-"use strict";
+("use strict");
 export default memo(function huami() {
     // useEffect(() => {
     //     document.title = "masx200的github主页-" + "花密  不一样的密码管理工具";
@@ -190,7 +190,10 @@ export default memo(function huami() {
                         }
 
                         .flowerpassword body {
-                            font: 14px/1.5 Tahoma, Helvetica, Arial,
+                            font:
+                                14px/1.5 Tahoma,
+                                Helvetica,
+                                Arial,
                                 \u0005b8b\u0004f53;
                             color: #000;
                         }
@@ -522,7 +525,10 @@ export default memo(function huami() {
                             background-color: #fff;
                         }
                         .flowerpassword body {
-                            font: 14px/1.5 Tahoma, Helvetica, Arial,
+                            font:
+                                14px/1.5 Tahoma,
+                                Helvetica,
+                                Arial,
                                 \u0005b8b\u0004f53;
                             color: #000;
                         }

@@ -18,7 +18,7 @@ const nextConfig = {
     poweredByHeader: false,
     webpack: (
         config,
-        { dev } // { buildId, dev, isServer, defaultLoaders, webpack, ...rest }
+        { dev }, // { buildId, dev, isServer, defaultLoaders, webpack, ...rest }
     ) => {
         // console.log({
         //     buildId,
