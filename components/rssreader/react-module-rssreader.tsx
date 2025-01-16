@@ -74,11 +74,7 @@ function getrssmain() {
                                 data-loading-icon="mui-spinner mui-spinner-custom"
                                 className="mui-btn mui-btn-royal mui-btn-outlined btn-lg"
                                 href={{
-                                    pathname:
-                                        "/react-rssreader" +
-                                        "/" +
-                                        key +
-                                        ".html",
+                                    pathname: "/react-rssreader" + "/" + key,
                                 }}
                             >
                                 加载{key}

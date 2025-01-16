@@ -21,9 +21,7 @@ export const getStaticProps: GetStaticProps<
 > = async (context) => {
     // console.log(context);
     const sitename = context.params?.sitename;
-    const src = sitename
-        ? Reflect.get(rssfeedxml, sitename.replaceAll(".html", ""))
-        : undefined;
+    const src = sitename ? Reflect.get(rssfeedxml, sitename) : undefined;
     const data = src ? await getrss(src) : undefined;
     // console.log(sitename, data);
     return { /* revalidate: 3600, */ props: { sitename, data } };
@@ -32,7 +30,7 @@ export const getStaticPaths: GetStaticPaths<{ sitename: string }> = () => {
     return {
         fallback: false,
         paths: Object.keys(rssfeedxml).map((k) => {
-            return { params: { sitename: k + ".html" } };
+            return { params: { sitename: k } };
         }),
     };
 };
