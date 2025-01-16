@@ -1,20 +1,13 @@
 import { XMLParser } from "fast-xml-parser";
-const parser = new XMLParser();
 import { fetchtext } from "../markdown-react/fetchtext";
+import { cachepromise } from "./cachepromise";
 import { htmltotext } from "./htmltotext";
-
-// cachepromise
-// console.log(hljs)
-export interface Rssdata {
-    title: string;
-    content: {
-        link: string;
-        title: string;
-        description: string;
-    }[];
-    description: string;
-}
-export const getrss = async function (src: string): Promise<Rssdata> {
+import { RSSDATA } from "./RSSDATA";
+export type { RSSDATA };
+const parser = new XMLParser();
+export const getrss = cachepromise(async function (
+    src: string,
+): Promise<Readonly<RSSDATA>> {
     const text = await fetchtext(src);
     const xmlstring = text;
     var str = xmlstring;
@@ -26,10 +19,12 @@ export const getrss = async function (src: string): Promise<Rssdata> {
     var description: string = data.rss.channel.description;
     var myrsscontent: {
         link: string;
+        pubDate: string;
         title: string;
         description: string;
     }[] = data.rss.channel.item.map(
         (e: {
+            pubDate: string;
             description: string;
             link: string;
             title: string;
@@ -48,14 +43,21 @@ export const getrss = async function (src: string): Promise<Rssdata> {
             //@ts-ignore
             //        alert(e["content:encoded"]);
             //      }
-            // console.log(des);
+
             des = htmltotext(des);
 
             des = htmltotext(des);
-            // console.log(des);
-            return { link, title, description: des };
+
+            return { link, title, description: des, pubDate: e.pubDate };
         },
     );
     const content = myrsscontent;
-    return { title, content, description };
-};
+    return {
+        title,
+        content,
+        description,
+        link: data.rss.channel.link,
+        lastBuildDate:
+            data.rss.channel.lastBuildDate ?? data.rss.channel.pubDate,
+    } satisfies RSSDATA;
+});
