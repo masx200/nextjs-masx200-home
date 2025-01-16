@@ -30,7 +30,7 @@
         "dompurify": "^3.0.1",
         "fast-xml-parser": "^4.0.7",
         "flowerpassword.js": "^3.0.2",
-        "fork-ts-checker-webpack-plugin": "^8.0.0",
+        "fork-ts-checker-webpack-plugin": "^9.0.2",
         "highlight.js": "^11.2.0",
         "jquery": "^3.6.0",
         "jsdom": "^22.1.0",
