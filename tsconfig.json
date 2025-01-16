@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "allowImportingTsExtensions": true,
         "jsx": "preserve",
         "strict": true,
         "moduleResolution": "node",
