@@ -27,6 +27,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         
     - run: npm i -g cnpm
-    - run: cnpm install
+    - run: cnpm install --force
     - run: npm run build 
     # - run: npm run export
