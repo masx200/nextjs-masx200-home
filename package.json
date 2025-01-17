@@ -36,7 +36,7 @@
         "jsdom": "^22.1.0",
         "marked": "^5.1.0",
         "marked-base-url": "^1.0.1",
-        "marked-gfm-heading-id": "^3.0.4",
+        "marked-gfm-heading-id": "^4.1.1",
         "marked-highlight": "^2.0.1",
         "marked-mangle": "^1.0.1",
         "next": "^14.2.3",
