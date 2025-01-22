@@ -11,5 +11,6 @@ export default {
     酷安网: "https://weibrss.oneoo.info/rss/1746523974",
     coderjia: "https://www.coderjia.cn/rss.xml",
     appscross: "https://appscross.com/rss",
-vumstar:"https://masx200.github.io/nextjs-masx200-home/rss/vumstar.rss"
+    vumstar: "https://masx200.github.io/nextjs-masx200-home/rss/vumstar.rss",
+陶辉:"https://weibrss.oneoo.info/rss/1871821935"
 };
