@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>VUM星球</title>
+	<atom:link href="https://www.vumstar.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.vumstar.com</link>
+	<description>整合包、软路由、NAS、虚拟化、群晖、威联通、UNRAID、ESXI、PVE、OPENWRT</description>
+	<lastBuildDate>Wed, 22 Jan 2025 06:25:05 +0000</lastBuildDate>
+	<language>zh-Hans</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
+	<item>
+		<title>2025双软路由中旁路由里面如何使用Lucky进行简单的反向代理及加SSL证书</title>
+		<link>https://www.vumstar.com/6850/</link>
+					<comments>https://www.vumstar.com/6850/#comments</comments>
+		
+		<dc:creator><![CDATA[veelove]]></dc:creator>
+		<pubDate>Wed, 22 Jan 2025 06:25:03 +0000</pubDate>
+				<category><![CDATA[教程视频]]></category>
+		<guid isPermaLink="false">https://www.vumstar.com/?p=6850</guid>
+
+					<description><![CDATA[前言]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-zibllblock-iframe wp-block-embed is-type-video mb20"><div class="" style="padding-bottom:56%"><iframe class="" data-aspect="56%" framespacing="0" border="0" width="100%" frameborder="no" src="//player.bilibili.com/player.html?isOutside=true&amp;aid=113870521769612&amp;bvid=BV1hDf8Y4E8V&amp;cid=28009893858&amp;p=1"></iframe></div></div>
+
+
+
+<h2 class="wp-block-heading">前言</h2>
+
+
+
+<div class="wp-block-zibllblock-quote"><div class="quote_q" data-color="#ef0c7e" style="--quote-color:#ef0c7e"><i class="fa fa-quote-left"></i><p>以前我们习惯用Nginx Proxy Manager进行反代，很简单，但是设置配置上还是有点复杂，Lucky就相对更加简单</p></div></div>
+
+
+
+<div data-type="vip1" class="wp-block-zibllblock-hide-content"><span><div class="hidden-box"><a class="hidden-text signin-loader" href="javascript:;"><i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;此处内容已隐藏，皇冠会员可见<br><i class="fa fa-sign-in"></i>&nbsp;&nbsp;请登录后查看特权</a></div></span></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.vumstar.com/6850/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>2025搭建一个IPTV服务器，无需再抓直播源，随时随地看直播</title>
+		<link>https://www.vumstar.com/7654/</link>
+					<comments>https://www.vumstar.com/7654/#comments</comments>
+		
+		<dc:creator><![CDATA[veelove]]></dc:creator>
+		<pubDate>Tue, 21 Jan 2025 08:05:42 +0000</pubDate>
+				<category><![CDATA[教程视频]]></category>
+		<guid isPermaLink="false">https://www.vumstar.com/?p=7654</guid>
+
+					<description><![CDATA[前言]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-zibllblock-iframe wp-block-embed is-type-video mb20"><div class="" style="padding-bottom:56%"><iframe class="" data-aspect="56%" framespacing="0" border="0" width="100%" frameborder="no" src="https://www.youtube.com/embed/eVOnafySJ1A?si=LUUnuxAV_sK06Rne"></iframe></div></div>
+
+
+
+<h2 class="wp-block-heading">前言</h2>
+
+
+
+<div class="wp-block-zibllblock-quote"><div class="quote_q" data-color="#11C33F" style="--quote-color:#11C33F"><i class="fa fa-quote-left"></i><p>看IPTV直播源的方法教程可以说是非常多的，需求也是非常大的，但是真正能用的没几个，最终都会回归到抓自己的IPTV盒子的源，但是方法都比较复杂，现在有一个项目非常方便，而且目前可用度非常高。</p></div></div>
+
+
+
+<div data-type="reply" class="wp-block-zibllblock-hide-content"><span><div class="hidden-box" reply-show="true" reload-hash="#hidden-box-comment"><a class="hidden-text" href="javascript:(scrollTopTo('#commentform',-50));"><i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;此处内容已隐藏，请评论后刷新页面查看.</a></div></span></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.vumstar.com/7654/feed/</wfw:commentRss>
+			<slash:comments>342</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>2025年N150\N355全新低功耗CPU软路由来了，等待了两年终于迎来N100\N305迭代升级</title>
+		<link>https://www.vumstar.com/7591/</link>
+					<comments>https://www.vumstar.com/7591/#respond</comments>
+		
+		<dc:creator><![CDATA[veelove]]></dc:creator>
+		<pubDate>Sat, 11 Jan 2025 15:08:22 +0000</pubDate>
+				<category><![CDATA[产品视频]]></category>
+		<category><![CDATA[新品发布]]></category>
+		<guid isPermaLink="false">https://www.vumstar.com/?p=7591</guid>
+
+					<description><![CDATA[前言]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-zibllblock-iframe wp-block-embed is-type-video mb20"><div class="" style="padding-bottom:56%"><iframe class="" data-aspect="56%" framespacing="0" border="0" width="100%" frameborder="no" src="//player.bilibili.com/player.html?isOutside=true&amp;aid=113810258072457&amp;bvid=BV1vLcNewEkY&amp;cid=27818000404&amp;p=1"></iframe></div></div>
+
+
+
+<h2 class="wp-block-heading">前言</h2>
+
+
+
+<div class="wp-block-zibllblock-quote"><div class="quote_q" data-color="#664FFA" style="--quote-color:#664FFA"><i class="fa fa-quote-left"></i><p>N100\N305明星级CPU硬是抗了两年多，现在迭代升级终于来，赶紧尝尝先。</p></div></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.vumstar.com/7591/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>玄派创世魔方双网口小主机定制VUM-PVE整合包</title>
+		<link>https://www.vumstar.com/7569/</link>
+					<comments>https://www.vumstar.com/7569/#respond</comments>
+		
+		<dc:creator><![CDATA[veelove]]></dc:creator>
+		<pubDate>Mon, 06 Jan 2025 01:49:29 +0000</pubDate>
+				<category><![CDATA[VUM定制区]]></category>
+		<guid isPermaLink="false">https://www.vumstar.com/?p=7569</guid>
+
+					<description><![CDATA[定制的会员： 会员收益： 整合包定制服务（会员可获得额外收益）参与定制的机型，“VUM星球”官方会把详细机型配 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-zibllblock-quote"><div class="quote_q" data-color="#A845F7" style="--quote-color:#A845F7"><i class="fa fa-quote-left"></i><p>玄派创世魔方双网口小主，自带了双螃蟹网卡，并且顶部有着炫彩的跑马灯，整体颜值不错。</p></div></div>
+
+
+
+<h2 class="wp-block-heading">定制的会员：</h2>
+
+
+
+<div data-quantity="1" data-radius="true" style="text-align:center" class="wp-block-zibllblock-buttons radius"><span class="an_1 but hollow c-purple">fyasshole</span></div>
+
+
+
+<p></p>
+
+
+
+<h2 class="wp-block-heading">会员收益：</h2>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full is-resized"><img alt="图片[1]-VUM星球" decoding="async" src="https://www.vumstar.com/wp-content/themes/zibll/img/thumbnail-lg.svg" data-src="https://www.vumstar.com/wp-content/uploads/2024/02/20240207173036320-金币2.png"   class="wp-image-3305" style="width:175px;height:auto"/></figure>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p><strong>整合包定制服务（会员可获得额外收益）</strong><br>参与定制的机型，“VUM星球”官方会把详细机型配置及定制好的整合包，发布在网站的资源区，提供付费下载，如果有相同机型配置的用户购买后，产生收益，那么该钻石会员可以获得80%的收益，VUM星球官方获得20%的收益（仅按单次购买进行计算）</p>
+</div>
+</div>
+
+
+
+<h2 class="wp-block-heading">收益发放：</h2>
+
+
+
+<p>如产生购买收益，那么<strong>80%的收益</strong>，会入账到该名会员的余额账户中，余额可以进行<strong>充值会员</strong>、<strong>续费会员</strong>、也可以直接进行<strong><qc style="color:#ef0c7e;background:undefined">提现</qc></strong>，<strong>20%的收益</strong>会直接入账到“VUM星球”官方，用来做后续版本更新及维护的佣金。并且会在此贴实时公布</p>
+
+
+
+<h2 class="wp-block-heading">定制机型详情</h2>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>主机</p>
+
+
+
+<p>CPU</p>
+
+
+
+<p>内存</p>
+
+
+
+<p>硬盘</p>
+
+
+
+<p>自带网卡</p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>玄派创世魔方</p>
+
+
+
+<p>AMD R7-7840HS</p>
+
+
+
+<p>32G DDR5</p>
+
+
+
+<p>铠侠 M.2 NVME Exceria Pro Se10</p>
+
+
+
+<p>2 x Realtek RTL8125BGS-CG</p>
+</div>
+</div>
+
+
+
+<h2 class="wp-block-heading">VUM-PVE</h2>
+
+
+
+<div class="wp-block-zibllblock-alert alert-dismissible fade in"><div class="alert jb-blue" data-isclose="" role="alert">该款设备可以完美支持直出Windows画面和复古小游戏功能，HDMI声音正常。</div></div>
+
+
+
+<h3 class="wp-block-heading">网口顺序</h3>
+
+
+
+<div class="wp-block-zibllblock-alert alert-dismissible fade in"><div class="alert jb-green" data-isclose="" role="alert">PVE版整合包，网口排序如下：</div></div>
+
+
+
+<figure class="wp-block-image size-large"><img alt="图片[2]-VUM星球" decoding="async" src="https://www.vumstar.com/wp-content/themes/zibll/img/thumbnail-lg.svg" data-src="https://www.vumstar.com/wp-content/uploads/2025/01/20250106084325372-截屏2025-01-06-08.33.57-拷贝-1024x374.png"   class="wp-image-7572"/></figure>
+
+
+
+<h2 class="wp-block-heading">上手文档</h2>
+
+
+
+<div data-quantity="1" data-radius="true" style="text-align:center" class="wp-block-zibllblock-buttons radius"><span class="an_1 but hollow c-blue"><a href="https://www.vumstar.com/vum-pve-doc/">https://www.vumstar.com/vum-pve-doc/</a></span></div>
+
+
+
+<div data-type="payshow" class="wp-block-zibllblock-hide-content"><span><div class="hidden-box"><a class="hidden-text" href="javascript:(scrollTopTo('#posts-pay',-50));"><i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;此处内容已隐藏，请付费后查看</a></div></span></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.vumstar.com/7569/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>非常棒的出国面板搭建教程，协议超多超新</title>
+		<link>https://www.vumstar.com/7519/</link>
+					<comments>https://www.vumstar.com/7519/#comments</comments>
+		
+		<dc:creator><![CDATA[veelove]]></dc:creator>
+		<pubDate>Mon, 30 Dec 2024 02:02:42 +0000</pubDate>
+				<category><![CDATA[Linux教程类]]></category>
+		<guid isPermaLink="false">https://www.vumstar.com/?p=7519</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[
+<div data-type="vip2" class="wp-block-zibllblock-hide-content"><span><div class="hidden-box"><a class="hidden-text signin-loader" href="javascript:;"><i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;此处内容已隐藏，钻石会员可见<br><i class="fa fa-sign-in"></i>&nbsp;&nbsp;请登录后查看特权</a></div></span></div>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.vumstar.com/7519/feed/</wfw:commentRss>
+			<slash:comments>13</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>铭瑄MS-挑战者 H610ITX 2LAN V3主板定制VUM-PVE整合包</title>
+		<link>https://www.vumstar.com/7480/</link>
+					<comments>https://www.vumstar.com/7480/#respond</comments>
+		
+		<dc:creator><![CDATA[veelove]]></dc:creator>
+		<pubDate>Thu, 26 Dec 2024 11:28:35 +0000</pubDate>
+				<category><![CDATA[VUM定制区]]></category>
+		<guid isPermaLink="false">https://www.vumstar.com/?p=7480</guid>
+
+					<description><![CDATA[定制的会员： 会员收益： 整合包定制服务（会员可获得额外收益）参与定制的机型，“VUM星球”官方会把详细机型配 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-zibllblock-quote"><div class="quote_q" data-color="#A845F7" style="--quote-color:#A845F7"><i class="fa fa-quote-left"></i><p>会员使用了铭瑄MS-挑战者 H610ITX 2LAN V3主板，自带了两个网口，其中一个是2.5G螃蟹网卡，并配备了3D打印机箱i0w0i，颜值上不错。</p></div></div>
+
+
+
+<h2 class="wp-block-heading">定制的会员：</h2>
+
+
+
+<div data-quantity="1" data-radius="true" style="text-align:center" class="wp-block-zibllblock-buttons radius"><span class="an_1 but hollow c-purple">lanjue</span></div>
+
+
+
+<p></p>
+
+
+
+<h2 class="wp-block-heading">会员收益：</h2>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-3 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full is-resized"><img alt="图片[1]-VUM星球" decoding="async" src="https://www.vumstar.com/wp-content/themes/zibll/img/thumbnail-lg.svg" data-src="https://www.vumstar.com/wp-content/uploads/2024/02/20240207173036320-金币2.png"   class="wp-image-3305" style="width:175px;height:auto"/></figure>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p><strong>整合包定制服务（会员可获得额外收益）</strong><br>参与定制的机型，“VUM星球”官方会把详细机型配置及定制好的整合包，发布在网站的资源区，提供付费下载，如果有相同机型配置的用户购买后，产生收益，那么该钻石会员可以获得80%的收益，VUM星球官方获得20%的收益（仅按单次购买进行计算）</p>
+</div>
+</div>
+
+
+
+<h2 class="wp-block-heading">收益发放：</h2>
+
+
+
+<p>如产生购买收益，那么<strong>80%的收益</strong>，会入账到该名会员的余额账户中，余额可以进行<strong>充值会员</strong>、<strong>续费会员</strong>、也可以直接进行<strong><qc style="color:#ef0c7e;background:undefined">提现</qc></strong>，<strong>20%的收益</strong>会直接入账到“VUM星球”官方，用来做后续版本更新及维护的佣金。并且会在此贴实时公布</p>
+
+
+
+<h2 class="wp-block-heading">定制机型详情</h2>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-4 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>主板</p>
+
+
+
+<p>CPU</p>
+
+
+
+<p>内存</p>
+
+
+
+<p>硬盘</p>
+
+
+
+<p>自带网卡</p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>铭瑄MS-挑战者 H610ITX 2LAN V3</p>
+
+
+
+<p>I5-13600T</p>
+
+
+
+<p>32G DDR5</p>
+
+
+
+<p>WD Blue SN580 1TB</p>
+
+
+
+<p>1 x 英特尔I219-V 1G电口 </p>
+
+
+
+<p>1 x 瑞昱RTL8125 2.5GbE电口</p>
+</div>
+</div>
+
+
+
+<h2 class="wp-block-heading">VUM-PVE</h2>
+
+
+
+<div class="wp-block-zibllblock-alert alert-dismissible fade in"><div class="alert jb-blue" data-isclose="" role="alert">该款设备可以完美支持直出Windows画面和复古小游戏功能。</div></div>
+
+
+
+<div class="wp-block-zibllblock-alert alert-dismissible fade in"><div class="alert jb-blue" data-isclose="" role="alert">该CPU完美支持SR-IOV虚拟化核显</div></div>
+
+
+
+<h3 class="wp-block-heading">网口顺序</h3>
+
+
+
+<div class="wp-block-zibllblock-alert alert-dismissible fade in"><div class="alert jb-green" data-isclose="" role="alert">PVE版整合包，网口排序如下：</div></div>
+
+
+
+<figure class="wp-block-image size-large"><img alt="图片[2]-VUM星球" decoding="async" src="https://www.vumstar.com/wp-content/themes/zibll/img/thumbnail-lg.svg" data-src="https://www.vumstar.com/wp-content/uploads/2024/12/20241227140054607-gheeee-1024x395.jpg"   class="wp-image-7491"/></figure>
+
+
+
+<h2 class="wp-block-heading">上手文档</h2>
+
+
+
+<div data-quantity="1" data-radius="true" style="text-align:center" class="wp-block-zibllblock-buttons radius"><span class="an_1 but hollow c-blue"><a href="https://www.vumstar.com/vum-pve-doc/">https://www.vumstar.com/vum-pve-doc/</a></span></div>
+
+
+
+<div data-type="payshow" class="wp-block-zibllblock-hide-content"><span><div class="hidden-box"><a class="hidden-text" href="javascript:(scrollTopTo('#posts-pay',-50));"><i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;此处内容已隐藏，请付费后查看</a></div></span></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.vumstar.com/7480/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>更新VUM-PVE 1.8版本</title>
+		<link>https://www.vumstar.com/7436/</link>
+					<comments>https://www.vumstar.com/7436/#comments</comments>
+		
+		<dc:creator><![CDATA[veelove]]></dc:creator>
+		<pubDate>Fri, 20 Dec 2024 05:08:23 +0000</pubDate>
+				<category><![CDATA[VUM-PVE教程]]></category>
+		<category><![CDATA[版本更新]]></category>
+		<guid isPermaLink="false">https://www.vumstar.com/?p=7436</guid>
+
+					<description><![CDATA[更新日志： 更新内容： 1.更新PVE版本至最新版本8.3.32.指令集加入一键安装飞牛os功能3.修复转换为 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-zibllblock-alert alert-dismissible fade in"><div class="alert jb-blue" data-isclose="" role="alert">1.8版本支持跨版本升级，1.0、1.1、1.2、1.3、1.4、14.1、1.5、1.5.1、1.6、1.7均可以直接升级至1.8</div></div>
+
+
+
+<div class="wp-block-zibllblock-alert alert-dismissible fade in"><div class="alert jb-green" data-isclose="" role="alert">定制机型的版本之后陆续推送更新！</div></div>
+
+
+
+<h2 class="wp-block-heading">更新日志：</h2>
+
+
+
+<div data-pid="262" class="wp-block-zibllblock-postsbox"><div class="article-postsbox relative-h radius8">
+            <div class="abs-blur-bg"><img decoding="async" src="https://www.vumstar.com/wp-content/themes/zibll/img/thumbnail.svg" data-src="https://www.vumstar.com/wp-content/uploads/2023/12/gx2-300x169.jpg" alt="VUM-PVE 更新日志-VUM星球" class="lazyload fit-cover radius8 no-imgbox"></div>
+            <div class="posts-mini posts-item relative">
+            <div class="mr10"><div class="item-thumbnail"><a href="https://www.vumstar.com/262/"><img decoding="async" src="https://www.vumstar.com/wp-content/themes/zibll/img/thumbnail.svg" data-src="https://www.vumstar.com/wp-content/uploads/2023/12/gx2-300x169.jpg" alt="VUM-PVE 更新日志-VUM星球" class="lazyload fit-cover radius8 no-imgbox"></a></div></div>
+                <div class="posts-mini-con flex xx flex1 jsb">
+                    <div class="item-heading text-ellipsis-2 main-color">
+                        <a class="main-color" href="https://www.vumstar.com/262/">VUM-PVE 更新日志</a>
+                    </div>
+                    <div class="item-meta muted-2-color flex jsb ac"><item class="meta-author flex ac"><a href="https://www.vumstar.com/author/1/"><span class="avatar-mini"><img decoding="async" alt="vee的头像-VUM星球" src="https://www.vumstar.com/wp-content/themes/zibll/img/avatar-default.png" data-src="//www.vumstar.com/wp-content/uploads/2023/12/20231225234704202-截屏2023-12-25-23.42x39-拷贝-150x150.jpg" class="lazyload avatar avatar-id-1"><img decoding="async" class="lazyload avatar-badge" src="https://www.vumstar.com/wp-content/themes/zibll/img/thumbnail.svg" data-src="https://www.vumstar.com/wp-content/themes/zibll/img/vip-2.svg" data-toggle="tooltip" title="钻石会员" alt="钻石会员"></span></a><span title="2023-12-22 08:53:59" class="ml6">2年前</span></item><div class="meta-right"><item class="meta-comm"><a rel="nofollow" data-toggle="tooltip" title="去评论" href="https://www.vumstar.com/262/#comments"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-comment"></use></svg>12</a></item><item class="meta-view"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-view"></use></svg>3730</item><item class="meta-like"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-like"></use></svg>13</item></div></div>
+                </div>
+                </div>
+            </div></div>
+
+
+
+<h2 class="wp-block-heading">更新内容：</h2>
+
+
+
+<p>1.更新PVE版本至最新版本8.3.3<br>2.指令集加入一键安装飞牛os功能<br>3.修复转换为单软路由模式，OpenWrt主路由系统时不会分配DHCP问题</p>
+
+
+
+<h2 class="wp-block-heading">如何升级至1.8</h2>
+
+
+
+<div class="wp-block-zibllblock-alert alert-dismissible fade in"><div class="alert jb-blue" data-isclose="" role="alert">升级不会影响任何数据，请大家放心升级。</div></div>
+
+
+
+<div class="wp-block-zibllblock-alert alert-dismissible fade in"><div class="alert jb-red" data-isclose="" role="alert">升级过程不能中断或者断电，否则系统将无法启动及进入后台。</div></div>
+
+
+
+<h3 class="wp-block-heading">一、进入指令集，输入vum命令</h3>
+
+
+
+<figure class="wp-block-image size-large"><img alt="图片[1]-VUM星球" decoding="async" src="https://www.vumstar.com/wp-content/themes/zibll/img/thumbnail-lg.svg" data-src="https://www.vumstar.com/wp-content/uploads/2024/10/20241003114155260-%E6%88%AA%E5%B1%8F2024-10-03-11.41.14-1024x878.png"  /></figure>
+
+
+
+<h2 class="wp-block-heading">二、选择24项，在线更新</h2>
+
+
+
+<figure class="wp-block-image size-large"><img alt="图片[2]-VUM星球" decoding="async" src="https://www.vumstar.com/wp-content/themes/zibll/img/thumbnail-lg.svg" data-src="https://www.vumstar.com/wp-content/uploads/2024/10/20241003114314879-%E6%88%AA%E5%B1%8F2024-10-03-11.42.48-1024x878.png"  /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img alt="图片[3]-VUM星球" decoding="async" src="https://www.vumstar.com/wp-content/themes/zibll/img/thumbnail-lg.svg" data-src="https://www.vumstar.com/wp-content/uploads/2024/10/20241003114338605-%E6%88%AA%E5%B1%8F2024-10-03-11.43.26-1024x878.png"  /></figure>
+
+
+
+<h2 class="wp-block-heading">四、开始自动升级并完成升级</h2>
+
+
+
+<div class="wp-block-zibllblock-alert alert-dismissible fade in"><div class="alert jb-yellow" data-isclose="" role="alert">升级过程持续大概30分钟左右，不要关闭窗口，等待更新完成</div></div>
+
+
+
+<figure class="wp-block-image size-large"><img alt="图片[4]-VUM星球" decoding="async" src="https://www.vumstar.com/wp-content/themes/zibll/img/thumbnail-lg.svg" data-src="https://www.vumstar.com/wp-content/uploads/2024/12/20241219171539377-截屏2024-12-19-17.15.16-1024x685.png"   class="wp-image-7438"/></figure>
+
+
+
+<figure class="wp-block-image size-large"><img alt="图片[5]-VUM星球" decoding="async" src="https://www.vumstar.com/wp-content/themes/zibll/img/thumbnail-lg.svg" data-src="https://www.vumstar.com/wp-content/uploads/2024/12/20241219172104215-截屏2024-12-19-17.20.39-1024x685.png"   class="wp-image-7439"/></figure>
+
+
+
+<div class="wp-block-zibllblock-alert alert-dismissible fade in"><div class="alert jb-blue" data-isclose="" role="alert">看到以上内容，更新完成后，重启下PVE。</div></div>
+
+
+
+<div class="wp-block-zibllblock-alert alert-dismissible fade in"><div class="alert jb-yellow" data-isclose="" role="alert">注意：如果在更新过程中出现如果下选择框，按下面的图示操作即可。</div></div>
+
+
+
+<figure class="wp-block-image size-large"><img alt="图片[6]-VUM星球" decoding="async" src="https://www.vumstar.com/wp-content/themes/zibll/img/thumbnail-lg.svg" data-src="https://www.vumstar.com/wp-content/uploads/2024/05/20240506114931900-%E6%88%AA%E5%B1%8F2024-05-06-11.48.08-1024x886.png"  /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img alt="图片[7]-VUM星球" decoding="async" src="https://www.vumstar.com/wp-content/themes/zibll/img/thumbnail-lg.svg" data-src="https://www.vumstar.com/wp-content/uploads/2024/05/20240506114949231-%E6%88%AA%E5%B1%8F2024-05-06-11.48.59-1024x886.png"  /></figure>
+
+
+
+<div data-type="vip1" class="wp-block-zibllblock-hide-content"><span><div class="hidden-box"><a class="hidden-text signin-loader" href="javascript:;"><i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;此处内容已隐藏，皇冠会员可见<br><i class="fa fa-sign-in"></i>&nbsp;&nbsp;请登录后查看特权</a></div></span></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.vumstar.com/7436/feed/</wfw:commentRss>
+			<slash:comments>12</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>2024PVE下核显直出的Windows11里面安装安卓子系统，嵌套虚拟化</title>
+		<link>https://www.vumstar.com/7148/</link>
+					<comments>https://www.vumstar.com/7148/#comments</comments>
+		
+		<dc:creator><![CDATA[veelove]]></dc:creator>
+		<pubDate>Mon, 16 Dec 2024 03:25:03 +0000</pubDate>
+				<category><![CDATA[教程视频]]></category>
+		<guid isPermaLink="false">https://www.vumstar.com/?p=7148</guid>
+
+					<description><![CDATA[前言]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-zibllblock-iframe wp-block-embed is-type-video mb20"><div class="" style="padding-bottom:56%"><iframe class="" data-aspect="56%" framespacing="0" border="0" width="100%" frameborder="no" src="//player.bilibili.com/player.html?isOutside=true&amp;aid=113660303249655&amp;bvid=BV1s3BNYsEi5&amp;cid=27366523452&amp;p=1"></iframe></div></div>
+
+
+
+<h2 class="wp-block-heading">前言</h2>
+
+
+
+<div class="wp-block-zibllblock-quote"><div class="quote_q" data-color="#ef0c7e" style="--quote-color:#ef0c7e"><i class="fa fa-quote-left"></i><p>Windows11中的安卓子系统大家有没有尝试使用过，用过的应该会一直使用这个功能，所以当你拥有一台ALL IN ONE的设备时，也想在里面的Windows11激活这个功能，那么问题来了？怎么激活？接来来看教程。</p></div></div>
+
+
+
+<div data-type="reply" class="wp-block-zibllblock-hide-content"><span><div class="hidden-box" reply-show="true" reload-hash="#hidden-box-comment"><a class="hidden-text" href="javascript:(scrollTopTo('#commentform',-50));"><i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;此处内容已隐藏，请评论后刷新页面查看.</a></div></span></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.vumstar.com/7148/feed/</wfw:commentRss>
+			<slash:comments>57</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>2024VMware被博通收购后，如何才能免费下载到官方的ESXI最新版本及历史版本</title>
+		<link>https://www.vumstar.com/7218/</link>
+					<comments>https://www.vumstar.com/7218/#comments</comments>
+		
+		<dc:creator><![CDATA[veelove]]></dc:creator>
+		<pubDate>Fri, 29 Nov 2024 09:15:31 +0000</pubDate>
+				<category><![CDATA[ESXI教程类]]></category>
+		<category><![CDATA[教程视频]]></category>
+		<guid isPermaLink="false">https://www.vumstar.com/?p=7218</guid>
+
+					<description><![CDATA[前言]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-zibllblock-iframe wp-block-embed is-type-video mb20"><div class="" style="padding-bottom:56%"><iframe class="" data-aspect="56%" framespacing="0" border="0" width="100%" frameborder="no" src="//player.bilibili.com/player.html?isOutside=true&amp;aid=113565360986025&amp;bvid=BV17VzqYTENP&amp;cid=27090291988&amp;p=1"></iframe></div></div>
+
+
+
+<h2 class="wp-block-heading">前言</h2>
+
+
+
+<div class="wp-block-zibllblock-quote"><div class="quote_q" data-color="#ef0c7e" style="--quote-color:#ef0c7e"><i class="fa fa-quote-left"></i><p>自从博通收购了VMWARE后，很多朋友不知道怎么去下ESXI，其实在博通官网也可以下载，还有用过vCenter的方式也可以下载，今天就来教大家这两种方法。</p></div></div>
+
+
+
+<div data-type="reply" class="wp-block-zibllblock-hide-content"><span><div class="hidden-box" reply-show="true" reload-hash="#hidden-box-comment"><a class="hidden-text" href="javascript:(scrollTopTo('#commentform',-50));"><i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;此处内容已隐藏，请评论后刷新页面查看.</a></div></span></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.vumstar.com/7218/feed/</wfw:commentRss>
+			<slash:comments>252</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>畅网AMD7940HS主板+四口2.5G POE网卡定制整合包</title>
+		<link>https://www.vumstar.com/7125/</link>
+					<comments>https://www.vumstar.com/7125/#comments</comments>
+		
+		<dc:creator><![CDATA[veelove]]></dc:creator>
+		<pubDate>Tue, 26 Nov 2024 04:41:18 +0000</pubDate>
+				<category><![CDATA[VUM定制区]]></category>
+		<guid isPermaLink="false">https://www.vumstar.com/?p=7125</guid>
+
+					<description><![CDATA[定制的会员： 会员收益： 整合包定制服务（会员可获得额外收益）参与定制的机型，“VUM星球”官方会把详细机型配 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-zibllblock-quote"><div class="quote_q" data-color="#ef0c7e" style="--quote-color:#ef0c7e"><i class="fa fa-quote-left"></i><p>会员使用畅网AMD7940HS主板+加上四口2.5G POE网卡，兼顾软路由ALL IN ONE及为AP设备提供POE供电。钻石会员启用了“<strong>定制整合包</strong>”这项服务特权，我们为这款机型定制了PVE版整合包，如果你有一样的机型配置，可以直接下载使用。</p></div></div>
+
+
+
+<h2 class="wp-block-heading">定制的会员：</h2>
+
+
+
+<div data-quantity="1" data-radius="true" style="text-align:center" class="wp-block-zibllblock-buttons radius"><span class="an_1 but hollow c-purple">csky888999</span></div>
+
+
+
+<p></p>
+
+
+
+<h2 class="wp-block-heading">会员收益：</h2>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-5 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full is-resized"><img alt="图片[1]-VUM星球" decoding="async" src="https://www.vumstar.com/wp-content/themes/zibll/img/thumbnail-lg.svg" data-src="https://www.vumstar.com/wp-content/uploads/2024/02/20240207173036320-金币2.png"   class="wp-image-3305" style="width:175px;height:auto"/></figure>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p><strong>整合包定制服务（会员可获得额外收益）</strong><br>参与定制的机型，“VUM星球”官方会把详细机型配置及定制好的整合包，发布在网站的资源区，提供付费下载，如果有相同机型配置的用户购买后，产生收益，那么该钻石会员可以获得80%的收益，VUM星球官方获得20%的收益（仅按单次购买进行计算）</p>
+</div>
+</div>
+
+
+
+<h2 class="wp-block-heading">收益发放：</h2>
+
+
+
+<p>如产生购买收益，那么<strong>80%的收益</strong>，会入账到该名会员的余额账户中，余额可以进行<strong>充值会员</strong>、<strong>续费会员</strong>、也可以直接进行<strong><qc style="color:#ef0c7e;background:undefined">提现</qc></strong>，<strong>20%的收益</strong>会直接入账到“VUM星球”官方，用来做后续版本更新及维护的佣金。并且会在此贴实时公布</p>
+
+
+
+<h2 class="wp-block-heading">定制机型详情</h2>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-6 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>主板</p>
+
+
+
+<p>CPU</p>
+
+
+
+<p>内存</p>
+
+
+
+<p>硬盘</p>
+
+
+
+<p>自带网卡</p>
+
+
+
+<p>扩展POE网卡</p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>畅网AMD 7940HS</p>
+
+
+
+<p>AMD 7940HS</p>
+
+
+
+<p>64G DDR5</p>
+
+
+
+<p>WD PC SN735 512G</p>
+
+
+
+<p>4 x 英特尔i226 2.5G电口</p>
+
+
+
+<p>4 x 英特尔i226 2.5G带POE供电电口</p>
+</div>
+</div>
+
+
+
+<h2 class="wp-block-heading">VUM-PVE</h2>
+
+
+
+<div class="wp-block-zibllblock-alert alert-dismissible fade in"><div class="alert jb-blue" data-isclose="" role="alert">该款设备可以完美支持直出Windows画面和复古小游戏功能，并且均有HDMI声音。</div></div>
+
+
+
+<div class="wp-block-zibllblock-alert alert-dismissible fade in"><div class="alert jb-red" data-isclose="" role="alert">该CPU不支持SR-IOV虚拟化核显</div></div>
+
+
+
+<h3 class="wp-block-heading">网口顺序</h3>
+
+
+
+<div class="wp-block-zibllblock-alert alert-dismissible fade in"><div class="alert jb-green" data-isclose="" role="alert">PVE版整合包，网口排序如下：</div></div>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img alt="图片[2]-VUM星球" decoding="async" src="https://www.vumstar.com/wp-content/themes/zibll/img/thumbnail-lg.svg" data-src="https://www.vumstar.com/wp-content/uploads/2024/11/20241126100726847-截屏2024-11-22-15.56.11-拷贝-1024x1003.png"   class="wp-image-7128" style="width:557px;height:auto"/></figure>
+
+
+
+<h3 class="wp-block-heading">定制需求</h3>
+
+
+
+<ul class="wp-block-list">
+<li>爱快容量修改为20G</li>
+
+
+
+<li>iStoreOS容量修改为10G</li>
+
+
+
+<li>群晖根系统盘修改为200G</li>
+
+
+
+<li>整合一个Home Assistant</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">上手文档</h2>
+
+
+
+<div data-quantity="1" data-radius="true" style="text-align:center" class="wp-block-zibllblock-buttons radius"><span class="an_1 but hollow c-blue"><a href="https://www.vumstar.com/vum-pve-doc/">https://www.vumstar.com/vum-pve-doc/</a></span></div>
+
+
+
+<div data-type="payshow" class="wp-block-zibllblock-hide-content"><span><div class="hidden-box"><a class="hidden-text" href="javascript:(scrollTopTo('#posts-pay',-50));"><i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;此处内容已隐藏，请付费后查看</a></div></span></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.vumstar.com/7125/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
