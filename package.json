@@ -33,7 +33,7 @@
         "fork-ts-checker-webpack-plugin": "^9.0.2",
         "highlight.js": "^11.2.0",
         "jquery": "^3.6.0",
-        "jsdom": "^22.1.0",
+        "jsdom": "^26.0.0",
         "marked": "^5.1.0",
         "marked-base-url": "^1.0.1",
         "marked-gfm-heading-id": "^3.0.4",
@@ -46,7 +46,7 @@
         "prettier": "^3.2.5",
         "react": "^18.3.1",
         "react-dom": "18.3.1",
-        "sharp": "^0.32.1",
+        "sharp": "^0.33.5",
         "styled-jsx-plugin-postcss": "^4.0.1",
         "terser": "^5.15.0",
         "typescript": "^5.2.2"
