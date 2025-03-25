@@ -1,4 +1,5 @@
 export default {
+    最后三人: "https://bk.197501.xyz/rss.xml",
     tmtpost: "https://www.tmtpost.com/feed/",
     iplaysoft: "https://www.iplaysoft.com/feed/",
     landiannews: "https://www.landiannews.com/feed/",
